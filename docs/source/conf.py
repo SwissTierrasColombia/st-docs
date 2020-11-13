@@ -13,12 +13,12 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'st-docs'
-copyright = '2020, Andrés Mauricio Acosta Pulido'
+project = 'Documentación Sistema de Transición'
+copyright = '2020, SwissTierras Colombia'
 author = 'Andrés Mauricio Acosta Pulido'
 
 # The full version, including alpha/beta/rc tags
@@ -26,15 +26,20 @@ release = 'v2.23.38'
 
 
 # -- General configuration ---------------------------------------------------
-import sphinx_rtd_theme
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
     'recommonmark',
-    'sphinx_rtd_theme'
+    'sphinx_rtd_theme',
+    'rst2pdf.pdfbuilder'
     ]
 
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
