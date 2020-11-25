@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: "production"
+
+---
+spring:
+  profiles: production
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+server:
+  port: PORT

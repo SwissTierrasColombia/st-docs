@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: "production"
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    enabled: true
+
+server:
+  port: ${PORT:0}
+  tomcat:
+    max-threads: 0
+
+---
+spring:
+  profiles: production
+  datasource:
+    url: jdbc:postgresql://HOSTNAME:PORT/DATABASE
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      minimumIdle: 1
+      maximumPoolSize: 5
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate.ddl-auto: none
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://HOSTNAME:PORT/eureka
+
+iliProcesses:
+  srs: "3116"
+  modelsDirectory: /opt/st/ili/models/
+  ogrPath: /usr/bin

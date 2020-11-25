@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: "production"
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+server:
+  port: ${PORT:0}
+
+---
+spring:
+  profiles: production
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://HOSTNAME:PORT/eureka

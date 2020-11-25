@@ -1,0 +1,97 @@
+spring:
+  profiles:
+    active: "production"
+  servlet:
+    multipart:
+      maxFileSize: 2000MB
+      maxRequestSize: 2000MB
+  rabbitmq:
+    host: HOSTNAME
+    port: PORT
+    username: username
+    password: password
+  main:
+    allow-bean-definition-overriding: true
+
+st:
+  rabbitmq:
+    queueUpdateIntegration:
+      exchange: st.exchange.udpate.integrations
+      queue: st.queue.update.integrations
+      routingkey: st.routingkey.update.integrations
+      concurrency: 4
+    queueUpdateExport:
+      exchange: st.exchange.udpate.exports
+      queue: st.queue.update.exports
+      routingkey: st.routingkey.update.exports
+      concurrency: 4
+    queueUpdateStateSupply:
+      exchange: st.exchange.update.state.supply
+      queue: st.queue.update.state.supply
+      routingkey: st.routingkey.update.state.supply
+      concurrency: 4
+    queueNotifications:
+      exchange: st.exchange.notifications
+      queue: st.queue.notifications
+      routingkey: st.routingkey.notifications
+      concurrency: 4
+    queueIli:
+        exchange: st.exchange.ili
+        queue: st.queue.ili
+        routingkey: st.routingkey.ili
+        concurrency: 1
+    queueResultImport:
+      exchange: st.exchange.result.import
+      queue: st.queue.result.import
+      routingkey: st.routingkey.result.import
+      concurrency: 4
+    queueResultExport:
+      exchange: st.exchange.result.export
+      queue: st.queue.result.export
+      routingkey: st.routingkey.result.export
+      concurrency: 4
+  ftp:
+    host: st-ftpd
+    port: 21
+  site:
+    url: https://HOSTNAME/login
+    email: correo_soporte@correo.com
+  root:
+    username: root
+    password: password
+  temporalDirectory: /temporales
+  filesDirectory: /finales
+    
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 420000
+            
+ribbon:
+  ConnectTimeout: 120000
+  ReadTimeout: 300000
+
+---
+spring:
+  profiles: production
+
+oauth:
+  clients:
+    site:
+      id: id-site-web
+      secret : secret
+      timeAccessToken: 28800
+      timeRefreshToken: 28800
+    assistant:
+      id: id-site-web2
+      secret : secret2
+      timeAccessToken: 28800
+      timeRefreshToken: 28800
+  jwt:
+    key: key
+
