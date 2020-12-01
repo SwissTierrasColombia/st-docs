@@ -19,7 +19,7 @@ import sphinx_rtd_theme
 
 project = 'Documentación Sistema de Transición'
 copyright = '2020, SwissTierras Colombia'
-author = 'Andrés Mauricio Acosta Pulido'
+author = 'Andrés Mauricio Acosta Pulido - Jhon Rondon'
 
 # The full version, including alpha/beta/rc tags
 release = 'v2.23.38'

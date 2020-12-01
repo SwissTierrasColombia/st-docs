@@ -1,7 +1,4 @@
-.. Documentation_ETLs_IGAC documentation master file, created by
-   sphinx-quickstart on Thu Apr 16 10:41:12 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Documentación Sistema de transción.
 
 Bienvenido a la documentación del Sistema de Transición
 ===================================================
@@ -14,4 +11,5 @@ El Sistema de Transición se concibe como un Ecosistema de Solución que permite
    :maxdepth: 2
    :caption: Contenido:
 
+   user-manual-doc
    technical-doc

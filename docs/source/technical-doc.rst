@@ -1,14 +1,14 @@
 Documentación técnica
 ===================================================
 
-Esta sección describe los insumos
-
 .. toctree::
     :glob:
     :maxdepth: 2
 
     technical-doc/index.md
     technical-doc/version.md
+    technical-doc/users.md
+    technical-doc/databases.md
     technical-doc/st-configuration-properties.md
     technical-doc/general-settings.md
     technical-doc/st-rabbitmq.md
