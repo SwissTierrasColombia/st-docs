@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Configuraciones Generales &mdash; documentación de Documentación Sistema de Transición - v2.23.38</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="RabbitMQ" href="st-rabbitmq.html" />
+    <link rel="prev" title="Repositorio de Configuración" href="st-configuration-properties.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Documentación Sistema de Transición
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user-manual-doc.html">Documentación técnica</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../technical-doc.html">Documentación técnica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html">Manual de despliegue ST (docker)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="version.html">Versionamiento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-configuration-properties.html">Repositorio de Configuración</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuraciones Generales</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#docker">Docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#espacio-almacenamiento-compartido">Espacio almacenamiento compartido</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="st-rabbitmq.html">RabbitMQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-config-server.html">Microservicio st-config-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-eureka-server.html">Microservicio st-eureka-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-zuul-server.html">Microservicio st-zuul-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-oauth.html">Microservicio st-microservice-oauth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-administration.html">Microservicio st-microservice-administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-managers.html">Microservicio st-microservice-managers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-providers.html">Microservicio st-microservice-providers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-operators.html">Microservicio st-microservice-operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-supplies.html">Microservicio st-microservice-supplies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-tasks.html">Microservicio st-microservice-tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-workspaces.html">Microservicio st-microservice-workspaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-ili.html">Microservicio st-microservice-ili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-notifier.html">Microservicio st-microservice-notifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-reports.html">Microservicio st-microservice-reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-site-web.html">Servidor st-site-web</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentación Sistema de Transición</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../technical-doc.html">Documentación técnica</a> &raquo;</li>
+        
+      <li>Configuraciones Generales</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/technical-doc/general-settings.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="configuraciones-generales">
+<h1>Configuraciones Generales<a class="headerlink" href="#configuraciones-generales" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>A continuación se explica los requisitos generales o transversales que se requieren configurar:</p>
+<div class="section" id="docker">
+<h2>Docker<a class="headerlink" href="#docker" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se debe crear una red en docker la cual alojará los diferentes microservicios.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ docker network create &lt;nombre-de-la-red&gt;
+</pre></div>
+</div>
+<p>Por ejemplo:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ docker network create st
+</pre></div>
+</div>
+</div>
+<div class="section" id="espacio-almacenamiento-compartido">
+<h2>Espacio almacenamiento compartido<a class="headerlink" href="#espacio-almacenamiento-compartido" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El sistema de transición requiere de dos directorios para la gestión de documentos cargados al sistema:</p>
+<ul class="simple">
+<li><p><strong>Directorio Temporal</strong>: Este directorio es usado para mantener archivos de forma temporal, que posteriormente serán eliminados.</p></li>
+<li><p><strong>Directorio Final</strong>: Este directorio almacenará los archivos que requieran persistencia permanente en el sistema.</p></li>
+</ul>
+<p>A partir de esto se requiere definir dos espacios de almacenamiento, por ejemplo:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ mkdir /opt/st/repositorio/finales
+$ mkdir /opt/st/repositorio/temporales
+</pre></div>
+</div>
+<p>Una vez definidos los espacios de almacenamiento se requiere modificar las siguientes propiedades en el archivo <em><strong>application.yml</strong></em> del <a class="reference internal" href="st-configuration-properties.html"><span class="doc">repositorio de configuración</span></a>:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">st</span><span class="p">:</span>
+  <span class="nt">temporalDirectory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/opt/st/repositorio/temporales</span>
+  <span class="nt">filesDirectory</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/opt/st/repositorio/finales</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>Nota</strong>: Es importante destacar que al utilizar docker, esta configuración de directorios aplicará para la maquina host como para el contenedor.</p>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="st-rabbitmq.html" class="btn btn-neutral float-right" title="RabbitMQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="st-configuration-properties.html" class="btn btn-neutral float-left" title="Repositorio de Configuración" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, SwissTierras Colombia
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
