@@ -2,7 +2,7 @@
 
 Para el desarrollo del sistema se contemplan de forma general las actividades que se necesitan para la gestión de información en el marco del barrido predial masivo (bmp) con un alcance acotado hasta el momento de disposición y entrega de los insumos al operador por parte del gestor catastral como se muestra en la imagen 1; en donde se inicia con la autenticación de cada uno de los perfiles y se termina con la descarga de los insumos por parte del operador a través del sistema. 
 
---grafico uno
+![Imagen 1. Flujo de actividades sistema de transición Web](images/Imagen-1-Flujo-de-actividades-sistema-de-transición-Web.png)
 
 En la parte superior de la tabla de la imagen 1, se muestran cuatro actores que interactúan en el sistema y que se explicaran cada uno en la siguiente sección; las siguientes actividades que pertenecen a la Fase 1, están programadas en cada uno de los módulos del sistema, para que los usuarios puedan desarrollar las actividades concernientes a proveedor los insumos necesarios para iniciar el proceso de levantamiento catastral en el marco de los barridos prediales y en la Fase 2 las actividades asociadas a la recepción de los productos del BPM.
 

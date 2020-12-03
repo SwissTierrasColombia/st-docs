@@ -1,4 +1,4 @@
 # Gstión de usuarios 
 
--- grafico 3
+![roles](images/roles.png)
 

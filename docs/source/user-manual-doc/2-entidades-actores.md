@@ -19,15 +19,14 @@ En las actividades definidas en la imagen 1 que se programaron en el Sistema de 
 - **Gestor Catastral**: Entidad encargada de Gestionar el municipio, solicitar e Integrar los Insumos, así como de disponerlos para su entrega al operador. Tiene los siguientes roles asociados: 
   - **Director**: Rol encargado de gestionar las actividades para definir que insumos necesita un municipio, asignar un operador para que realice el barrido predial, solicitar insumos y asignar tareas de revisión e integración de insumos.
   - **Integrador**: Rol encargado de realizar la integración de insumos, específicamente de los archivos de datos catastrales (IGAC) y registrales (SNR) que se solicitan en el sistema en formato XTF y están estructurados bajo el modelo de insumos LADM-COL.
-
-## Control de calidad
+  - **Control de calidad**: PENDIENTE A DESCRIBIR
 
 - **Operador Catastral**: Entidad encargada dentro del sistema de recibir y descargar los insumos del municipio asignado para iniciar las labores de barrido predial masivo en los municipios asignados.
 - **Proveedor de Insumo**: Entidad encargada de suministrar los insumos solicitados por parte del gestor para el municipio asignado de acuerdo con la caracterización de insumos del sistema y el perfil de proveedor asignado (catastral, cartográfico, agrologico, registral, ANT).
 
 De acuerdo con lo anterior, en la siguiente tabla (nº1), se muestra en la parte izquierda los usuarios definidos para el sistema de transición Web y los permisos asociados a ellos, en la parte derecha se muestra los módulos propuestos para la gestión de pantallas dentro del sistema y la relación con cada uno de los perfiles propuestos. 
 
---grafico dos
+![Tabla 1. Definición de usuarios y perfiles en el sistema de transición Web](images/Tabla-1-Definición-de-usuarios-y-perfiles-en-el-sistema-de-transición-Web.png)
 
 **NOTA IMPORTANTE**: De acuerdo con lo descrito en la sección 1 y 2, los módulos y las funcionalidades que se describen a continuación estarán visibles en el menú de la interfaz de la aplicación de acuerdo con el perfil asignado y solo estarán disponibles las tareas que se puede ejecutar dentro del sistema.
 
