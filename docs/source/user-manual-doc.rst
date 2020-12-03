@@ -14,3 +14,5 @@ Manual de usuario
     user-manual-doc/6-rol-super-admin-sistema.md
     user-manual-doc/7-rol-admin-sistema.md
     user-manual-doc/8-rol-gestor-catastral.md
+    user-manual-doc/9-rol-operador.md
+    user-manual-doc/10-rol-proveedor-insumos.md
