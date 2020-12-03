@@ -26,7 +26,7 @@ En las actividades definidas en la imagen 1 que se programaron en el Sistema de 
 
 De acuerdo con lo anterior, en la siguiente tabla (nº1), se muestra en la parte izquierda los usuarios definidos para el sistema de transición Web y los permisos asociados a ellos, en la parte derecha se muestra los módulos propuestos para la gestión de pantallas dentro del sistema y la relación con cada uno de los perfiles propuestos. 
 
-![Tabla 1. Definición de usuarios y perfiles en el sistema de transición Web](images/Tabla-1-Definición-de-usuarios-y-perfiles-en-el-sistema-de-transición-Web.png)
+![tabla](images/tabla.png)
 
 **NOTA IMPORTANTE**: De acuerdo con lo descrito en la sección 1 y 2, los módulos y las funcionalidades que se describen a continuación estarán visibles en el menú de la interfaz de la aplicación de acuerdo con el perfil asignado y solo estarán disponibles las tareas que se puede ejecutar dentro del sistema.
 

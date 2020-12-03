@@ -32,7 +32,7 @@
 
 ![7-asignar-gestor-municipio.gif](images/administrador/7-asignar-gestor-municipio.gif)
 
-![10-actualizar-información-basica-municipio.gif](images/administrador/10-actualizar-información-basica-municipio.gif)
+![10-actualizar-información-basica-municipio.gif](images/administrador/10-actualizar-informacion-basica-municipio.gif)
 
 ### Disposición de información para la Gestión Catastral
 
