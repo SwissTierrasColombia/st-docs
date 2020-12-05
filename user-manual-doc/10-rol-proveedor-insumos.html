@@ -1,0 +1,290 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ROL: PROVEEDOR DE INSUMOS &mdash; documentación de Documentación Sistema de Transición - v2.23.38</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Documentación técnica" href="../technical-doc.html" />
+    <link rel="prev" title="ROL: OPERADOR" href="9-rol-operador.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Documentación Sistema de Transición
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../user-manual-doc.html">Manual de usuario</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="0-introduccion.html">Introducción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1-descripcion-st.html">Descripción del sistema de transición</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2-entidades-actores.html">Entidades y/o actores del sistema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3-gestion-usuarios.html">Gstión de usuarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4-funcionalidades.html">Funcionalidades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5-descripcion-interfaz.html">Descripción de la interfaz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6-rol-super-admin-sistema.html">ROL: SUPER ADMINISTRADOR DEL SISTEMA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="7-rol-admin-sistema.html">ROL: ADMINISTRADOR DEL SISTEMA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="8-rol-gestor-catastral.html">ROL: GESTOR CATASTRAL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-rol-operador.html">ROL: OPERADOR</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ROL: PROVEEDOR DE INSUMOS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gestion-de-usuarios-perfil-administrador">Gestión de Usuarios (perfil Administrador)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#listar-usuarios">Listar Usuarios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#registrar-usuarios">Registrar Usuarios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#crear-area-de-trabajo">Crear Área de Trabajo</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#gestion-de-insumos">Gestión de Insumos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#atencion-a-peticiones-de-creacion-de-insumos-perfil-administrador">Atención a peticiones de creación de insumos (perfil Administrador)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caracterizacion-de-insumos-perfil-administrador">Caracterización de insumos (perfil Administrador)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#solicitudes-pendientes-perfil-tecnico">Solicitudes pendientes (perfil Técnico)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cargue-de-insumo-catastral-a-traves-de-la-etl-cobol-snc-perfil-tecnico">Cargue de insumo Catastral a través de la ETL Cobol-SNC (perfil Técnico)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caso-especial-snr-revision-y-cargue-de-adjuntos-pdf-cabida-y-linderos">Caso especial SNR (Revisión y cargue de adjuntos PDF “Cabida y Linderos”)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#solicitudes-atendidas-perfil-tecnico">Solicitudes atendidas (perfil Técnico)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../technical-doc.html">Documentación técnica</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentación Sistema de Transición</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../user-manual-doc.html">Manual de usuario</a> &raquo;</li>
+        
+      <li>ROL: PROVEEDOR DE INSUMOS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user-manual-doc/10-rol-proveedor-insumos.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="rol-proveedor-de-insumos">
+<h1>ROL: PROVEEDOR DE INSUMOS<a class="headerlink" href="#rol-proveedor-de-insumos" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="gestion-de-usuarios-perfil-administrador">
+<h2>Gestión de Usuarios (perfil Administrador)<a class="headerlink" href="#gestion-de-usuarios-perfil-administrador" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="listar-usuarios">
+<h3>Listar Usuarios<a class="headerlink" href="#listar-usuarios" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><img alt="11-lista-usuarios-administrador.gif" src="../_images/11-lista-usuarios-administrador.gif" /></p>
+</div>
+<div class="section" id="registrar-usuarios">
+<h3>Registrar Usuarios<a class="headerlink" href="#registrar-usuarios" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><img alt="1-registrar-tecnico.gif" src="../_images/1-registrar-tecnico.gif" />
+<img alt="2-registro-tecnico-snr.gif" src="../_images/2-registro-tecnico-snr.gif" />
+<img alt="3-registro-revisor-snr.gif" src="../_images/3-registro-revisor-snr.gif" /></p>
+</div>
+<div class="section" id="crear-area-de-trabajo">
+<h3>Crear Área de Trabajo<a class="headerlink" href="#crear-area-de-trabajo" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><img alt="7-crear-area-trabajo.gif" src="../_images/7-crear-area-trabajo.gif" />
+<img alt="8-editar-area-trabajo.gif" src="../_images/8-editar-area-trabajo.gif" />
+<img alt="9-eliminar-area-trabajo.gif" src="../_images/9-eliminar-area-trabajo.gif" /></p>
+</div>
+</div>
+<div class="section" id="gestion-de-insumos">
+<h2>Gestión de Insumos<a class="headerlink" href="#gestion-de-insumos" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="atencion-a-peticiones-de-creacion-de-insumos-perfil-administrador">
+<h3>Atención a peticiones de creación de insumos (perfil Administrador)<a class="headerlink" href="#atencion-a-peticiones-de-creacion-de-insumos-perfil-administrador" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><img alt="4-aceptar-caracterizar-insumo.gif" src="../_images/4-aceptar-caracterizar-insumo.gif" />
+<img alt="6-peticiones-cerradas.gif" src="../_images/6-peticiones-cerradas.gif" /></p>
+</div>
+<div class="section" id="caracterizacion-de-insumos-perfil-administrador">
+<h3>Caracterización de insumos (perfil Administrador)<a class="headerlink" href="#caracterizacion-de-insumos-perfil-administrador" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><img alt="5-caracterizar-insumo.gif" src="../_images/5-caracterizar-insumo.gif" /></p>
+</div>
+<div class="section" id="solicitudes-pendientes-perfil-tecnico">
+<h3>Solicitudes pendientes (perfil Técnico)<a class="headerlink" href="#solicitudes-pendientes-perfil-tecnico" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><img alt="1-solicitudes-pendientes.gif" src="../_images/1-solicitudes-pendientes.gif" />
+<img alt="2.entrega-insumo-archivo.gif" src="../_images/2.entrega-insumo-archivo.gif" />
+<img alt="3.entrega-insumo-url.gif" src="../_images/3.entrega-insumo-url.gif" />
+<img alt="4.entrega-insumo-justificacion.gif" src="../_images/4.entrega-insumo-justificacion.gif" />
+<img alt="5-entrega-cerrar-solicitud.gif" src="../_images/5-entrega-cerrar-solicitud.gif" />
+<img alt="6-solicitudes-atendidas.gif" src="../_images/6-solicitudes-atendidas.gif" />
+<img alt="7-flujo-completo-entrega-insumo.gif" src="../_images/7-flujo-completo-entrega-insumo.gif" />
+<img alt="8-validando-xtf.gif" src="../_images/8-validando-xtf.gif" />
+<img alt="9-entregar-a-revision.gif" src="../_images/9-entregar-a-revision.gif" /></p>
+</div>
+<div class="section" id="cargue-de-insumo-catastral-a-traves-de-la-etl-cobol-snc-perfil-tecnico">
+<h3>Cargue de insumo Catastral a través de la ETL Cobol-SNC (perfil Técnico)<a class="headerlink" href="#cargue-de-insumo-catastral-a-traves-de-la-etl-cobol-snc-perfil-tecnico" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+<div class="section" id="caso-especial-snr-revision-y-cargue-de-adjuntos-pdf-cabida-y-linderos">
+<h3>Caso especial SNR (Revisión y cargue de adjuntos PDF “Cabida y Linderos”)<a class="headerlink" href="#caso-especial-snr-revision-y-cargue-de-adjuntos-pdf-cabida-y-linderos" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+<div class="section" id="solicitudes-atendidas-perfil-tecnico">
+<h3>Solicitudes atendidas (perfil Técnico)<a class="headerlink" href="#solicitudes-atendidas-perfil-tecnico" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><img alt="1-entregar-sin-revision.gif" src="../_images/1-entregar-sin-revision.gif" /></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../technical-doc.html" class="btn btn-neutral float-right" title="Documentación técnica" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="9-rol-operador.html" class="btn btn-neutral float-left" title="ROL: OPERADOR" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, SwissTierras Colombia
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
