@@ -1,7 +1,7 @@
 .. Documentación Sistema de transción.
 
 Bienvenido a la documentación del Sistema de Transición
-===================================================
+=======================================================
 
 Este documento tiene como objetivo proporcionar la facilidad de usar, estudiar, compartir y mejorar el Sistema de Transición con todos los microservicios asociados a él.  
 
