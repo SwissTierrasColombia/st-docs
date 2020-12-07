@@ -1,26 +1,15 @@
-.. Asistente LADM-COL documentation master file, created by
-   sphinx-quickstart on Thu Mar 19 16:58:58 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Documentación Sistema de transción.
 
-¡Bienvenido a la documentación del Asistente LADM-COL!
-======================================================
+Bienvenido a la documentación del Sistema de Transición
+=======================================================
+
+Este documento tiene como objetivo proporcionar la facilidad de usar, estudiar, compartir y mejorar el Sistema de Transición con todos los microservicios asociados a él.  
+
+El Sistema de Transición se concibe como un Ecosistema de Solución que permite gestionar la información necesaria para realizar el barrido predial por parte de las entidades y actores involucrados en el proceso del barrido predial masivo de manera transitoria mientras los sistemas misionales están en proceso de ajustes para responder a las nuevas necesidades. En este sentido el ST busca apoyar a los gestores catastrales en el flujo de información con los operadores y demás actores.  
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contenido:
 
-   acerca_de
-   instalacion
-   configuracion
-   barra_de_herramientas
-   administracion_de_datos
-   captura_y_estructura_de_datos
-   cargar_capas
-   gestion_de_insumos
-   reglas_de_calidad
-   consulta_de_datos
-   reportes
-   identificacion_de_novedades
-   sistema_de_transicion
-
+   user-manual-doc
+   technical-doc
