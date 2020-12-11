@@ -1,5 +1,6 @@
 # Rol: Super Administrador Del Sistema
 
+Este rol tiene funciones de mantenimiento en el sistema y de creación de usuarios administradores del sistema, este usuario es importante para dar un control y seguridad en la gestión del usuario administrador.
 ## Gestión de Usuarios
 
 En este módulo el Super Administrador puede listar y ver los datos de todos los usuarios del Sistema, también puede registrar nuevos usuarios a través de un formulario activarlos y desactivarlos , a continuación, la descripción de estas funcionalidades.

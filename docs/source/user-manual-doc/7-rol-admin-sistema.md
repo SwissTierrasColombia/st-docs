@@ -1,9 +1,15 @@
 # Rol: Administrador Del Sistema
 
+El administrador del sistema es el rol encargado de realizar principalmente la asignación de los municipios para iniciar la gestión catastral a los gestores habilitados, creación de entidades: gestores, operadores y proveedores de insumos; y usuarios de perfil “administrador” de cada una las entidades.
+
+A continuación, se describen cada uno de los módulos que tiene acceso este rol.
 ## Gestión de Usuarios
 
-En este módulo el Administrador que esta asociado a las funciones de la AUTORIDAD CATASTRAL  ,puede listar y ver los datos de todos los usuarios del Sistema, crear entidades de tipo Gestor, Operador o Proveedor de Insumos (ver sección 3- “Gestión de usuarios). Puede tambien registrar nuevos usuarios administradores de entidad a través de un formulario, activarlos y desactivarlos y asociarlos a un Rol Gestor, Operador o Proveedor de Insumos, a continuación la descripción de estas funcionalidades.
+En este módulo el Administrador que esta asociado a las funciones de la Autoridad Catastral  ,puede listar y ver los datos de todos los usuarios del Sistema, crear entidades de tipo Gestor, Operador o Proveedor de Insumos (ver sección “Administración de usuarios”). Puede tambien registrar nuevos usuarios administradores de entidad a través de un formulario, activarlos y desactivarlos y asociarlos a un Rol Gestor, Operador o Proveedor de Insumos, a continuación la descripción de estas funcionalidades.
 
+### Listar Usuarios
+
+Se despliega al dar clic en menú lateral izquierdo en la entrada “Administrador/Listar Usuarios” y el sistema lista todos los usuarios registrados en el sistema asociados a cada una de sus entidades con su rol, perfil y área de trabajo (si aplica) y sus datos adicionales como:  usuario, nombres, apellidos, correo, fecha de creación del usuario y las opciones de editar, activar/desactivar el usuario como se muestra en la imagen.
 
 ![13-desactivar-usuario.gif](images/administrador/13-desactivar-usuario.gif)
 
