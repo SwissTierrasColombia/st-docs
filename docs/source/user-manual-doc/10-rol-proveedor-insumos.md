@@ -1,4 +1,4 @@
-# ROL: PROVEEDOR DE INSUMOS
+# Rol: Proveedor de Insumos
 
 El rol de Proveedor de Insumos está dispuesto para ser utilizado por las entidades de orden nacional, departamental o municipal que generen insumos necesarios para realizar las actividades de levantamiento catastral, estas entidades son creadas en el Sistema y dependiendo del perfil que se les asigne (Administrador o Técnico) podrán tener a acceso a funcionalidades que les permitirán atender las solicitudes de insumos que se les realicen por parte del rol Gestor.
 
