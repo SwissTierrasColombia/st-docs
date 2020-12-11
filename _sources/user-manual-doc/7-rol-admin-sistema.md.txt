@@ -1,16 +1,16 @@
 # Rol: Administrador Del Sistema
 
-El administrador del sistema es el rol encargado de realizar principalmente la asignación de los municipios para iniciar la gestión catastral a los gestores habilitados, creación de entidades: gestores, operadores y proveedores de insumos; y usuarios de perfil “administrador” de cada una las entidades.
+El administrador del sistema es el rol encargado de realizar principalmente la asignación de los municipios para iniciar la gestión catastral a los gestores habilitados, creación de entidades: gestores, operadores y proveedores de insumos; y usuarios de perfil “Administrador” de cada una las entidades.
 
 A continuación, se describen cada uno de los módulos que tiene acceso este rol.
 
 ## Gestión de Usuarios
 
-En este módulo el Administrador que está asociado a las funciones de la Autoridad Catastral ,puede listar y ver los datos de todos los usuarios del Sistema, crear entidades de tipo Gestor, Operador o Proveedor de Insumos (ver sección "[Administración de usuarios](https://swisstierrascolombia.github.io/st-docs/user-manual-doc/3-gestion-usuarios.html)"). Puede también registrar nuevos usuarios administradores de la entidad a través de un formulario, activarlos y desactivarlos y asociarlos a un Rol Gestor, Operador o Proveedor de Insumos, a continuación la descripción de estas funcionalidades.
+En este módulo el Administrador que está asociado a las funciones de la Autoridad Catastral ,puede listar y ver los datos de todos los usuarios del Sistema, crear entidades de tipo Gestor, Operador o Proveedor de Insumos (ver sección “[Administración de usuarios](https://swisstierrascolombia.github.io/st-docs/user-manual-doc/3-gestion-usuarios.html)“). Puede también registrar nuevos usuarios administradores de la entidad a través de un formulario, activarlos y desactivarlos y asociarlos a un rol Gestor, Operador o Proveedor de Insumos, a continuación la descripción de estas funcionalidades.
 
 ### Listar Usuarios
 
-Se despliega al dar clic en menú lateral izquierdo en la entrada "Administrador/Listar Usuarios" y el sistema lista todos los usuarios registrados en el sistema asociados a cada una de sus entidades con su rol, perfil y área de trabajo (si aplica) y sus datos adicionales como: usuario, nombres, apellidos, correo, fecha de creación del usuario y las opciones de editar, activar/desactivar el usuario como se muestra en la imagen.
+Se despliega al dar clic en menú lateral izquierdo en la entrada “Administrador/Listar Usuarios“ y el sistema lista todos los usuarios registrados en el sistema asociados a cada una de sus entidades con su rol, perfil y área de trabajo (si aplica) y sus datos adicionales como: usuario, nombres, apellidos, correo, fecha de creación del usuario y las opciones de editar, activar/desactivar el usuario como se muestra en la imagen.
 
 ![13-desactivar-usuario.gif](images/administrador/13-desactivar-usuario.gif)
 
@@ -18,23 +18,23 @@ Se despliega al dar clic en menú lateral izquierdo en la entrada "Administrador
 
 ## Registrar usuarios Administradores de entidad
 
-Se despliega al dar clic en el menú lateral izquierdo en la entrada "Administrador/Registrar Usuarios" en el formulario se diligencian los campos: Nombre, Apellido, nombre de usuario, correo electrónico que se asocia a la cuenta y al que le llegarán todas las notificaciones del Sistema así como la contraseña para ingresar como se ve en la imagen; en la parte inferior se muestran tres opciones para el tipo de entidad a la que se quiere asociar: Gestor, Operador, Proveedor, se debe escoger dependiendo a qué Rol se desee asociar el usuario Administrador y luego escoger la entidad a la que pertenece de la lista de selección.
+Se despliega al dar clic en el menú lateral izquierdo en la entrada “Administrador/Registrar Usuarios“ en el formulario se diligencian los campos: Nombre, Apellido, nombre de usuario, correo electrónico que se asocia a la cuenta y al que le llegarán todas las notificaciones del Sistema así como la contraseña para ingresar como se ve en la imagen; en la parte inferior se muestran tres opciones para el tipo de entidad a la que se quiere asociar: Gestor, Operador, Proveedor, se debe escoger dependiendo a qué rol se desee asociar el usuario Administrador y luego escoger la entidad a la que pertenece de la lista de selección.
 
 ### Registrar usuario rol Gestor
 
-En el formulario diligenciar los campos solicitados y en la parte inferior escoger la opción "Gestor" y de la lista seleccionar la entidad a la que pertenece el usuario Administrador y dar clic en el botón "registrar"
+En el formulario diligenciar los campos solicitados y en la parte inferior escoger la opción “Gestor“ y de la lista seleccionar la entidad a la que pertenece el usuario Administrador y dar clic en el botón “Registrar“
 
 ![1-registro-gestor](images/administrador/1-registro-gestor.gif)
 
 ### Registrar usuario rol Operador
 
-En el formulario diligenciar los campos solicitados y en la parte inferior escoger la opción "Operador" y de la lista seleccionar la entidad a la que pertenece el usuario Administrador y dar clic en el botón "registrar"
+En el formulario diligenciar los campos solicitados y en la parte inferior escoger la opción “Operador“ y de la lista seleccionar la entidad a la que pertenece el usuario Administrador y dar clic en el botón “Registrar“
 
 ![4-registrar-operador.gif](images/administrador/4-registrar-operador.gif)
 
-## Registrar usuario rol Proveedor de Insumos
+### Registrar usuario rol Proveedor de Insumos
 
-En el formulario diligenciar los campos solicitados y en la parte inferior escoger la opción "Proveedor" y de la lista seleccionar la entidad a la que pertenece el usuario Administrador y dar clic en el botón "registrar"
+En el formulario diligenciar los campos solicitados y en la parte inferior escoger la opción “Proveedor“ y de la lista seleccionar la entidad a la que pertenece el usuario Administrador y dar clic en el botón “Registrar“
 
 ![2-registrar-proveedor.gif](images/administrador/2-registrar-proveedor.gif)
 
@@ -44,19 +44,19 @@ En este módulo el administrador realiza el registro de las entidades asociadas 
 
 ### Registrar Gestor
 
-Se da clic en el menú lateral izquierdo en la entrada "Administrador/Registrar Gestor" y se diligencia el formulario en los campos: Nombre y NIT, este último valida su estructura numérica y cantidad de caracteres (xxxxxxx-y) como se muestra en la imagen y se clic en el botón "Crear". En la parte inferior se muestra una lista con las entidades de Rol Gestor creadas, donde se puede editar dando clic en el icono de lápiz y "Activar/Desactivar" dando clic en el selector lo cual permite activar o desactivar estas entidades en el Sistema.
+Se da clic en el menú lateral izquierdo en la entrada “Administrador/Registrar Gestor“ y se diligencia el formulario en los campos: Nombre y NIT, este último valida su estructura numérica y cantidad de caracteres (xxxxxxx-y) como se muestra en la imagen y se clic en el botón “Crear“. En la parte inferior se muestra una lista con las entidades de Rol Gestor creadas, donde se puede editar dando clic en el icono de lápiz y “Activar/Desactivar“ dando clic en el selector lo cual permite activar o desactivar estas entidades en el Sistema.
 
 ![5-registrar-gestor-entidad.gif](images/administrador/5-registrar-gestor-entidad.gif)
 
 ### Registrar Operador
 
-Se da clic en el menú lateral izquierdo en la entrada "Administrador/Registrar Operador" en el formulario se diligencian los campos: Nombre, NIT y tipo que puede ser pública o privada como se muestra en la imagen. En la parte inferior se muestra una lista con las entidades de Rol Operador creadas, donde se puede editar dando clic en el icono de lápiz y "Activar/Desactivar" dando clic en el selector lo cual permite activar o desactivar estas entidades en el Sistema.
+Se da clic en el menú lateral izquierdo en la entrada “Administrador/Registrar Operador“ en el formulario se diligencian los campos: Nombre, NIT y tipo que puede ser pública o privada como se muestra en la imagen. En la parte inferior se muestra una lista con las entidades de Rol Operador creadas, donde se puede editar dando clic en el icono de lápiz y “Activar/Desactivar“ dando clic en el selector lo cual permite activar o desactivar estas entidades en el Sistema.
 
 ![3-registrar-operador-entidad.gif](images/administrador/3-registrar-operador-entidad.gif)
 
 ### Registrar Proveedor de Insumos
 
-Se da clic en el menú lateral izquierdo en la entrada “Administrador/Registrar Proveedor” en el formulario como se muestra en la imagen, se diligencian los campos: Nombre, NIT y categoría; este último tiene como opción tres categorías catastro, registro, tierras y general, se escoge dependiendo el tipo de información que el proveedor disponga en el Sistema, por defecto la interfaz selecciona la categoría "general". En esta misma interfaz se listan las entidades con rol proveedor de insumos creados en el Sistema y tiene la opción de ser editadas, activar o desactivar estas entidades para que estén disponibles o no en el Sistema y eliminarlas permanentemente.
+Se da clic en el menú lateral izquierdo en la entrada “Administrador/Registrar Proveedor” en el formulario como se muestra en la imagen, se diligencian los campos: Nombre, NIT y categoría; este último tiene como opción tres categorías catastro, registro, tierras y general, se escoge dependiendo el tipo de información que el proveedor disponga en el Sistema, por defecto la interfaz selecciona la categoría “General“. En esta misma interfaz se listan las entidades con rol proveedor de insumos creados en el Sistema y tiene la opción de ser editadas, activar o desactivar estas entidades para que estén disponibles o no en el Sistema y eliminarlas permanentemente.
 
 ![6-registrar-proveedor-entidad.gif](images/administrador/6-registrar-proveedor-entidad.gif)
 
@@ -66,7 +66,7 @@ En este módulo el administrador realiza la asignación de los municipios para i
 
 ### Asignación de Gestor
 
-Se despliega al dar clic en el menú lateral izquierdo en la entrada "Gestión de Municipio/Asignación" se selecciona el departamento y luego el municipio o municipios utilizando los selectores; se diligencian los datos y se carga el soporte correspondiente para la asignación al gestor y se da clic en el botón Asignar Gestor Catastral como se ve en la imagen.
+Se despliega al dar clic en el menú lateral izquierdo en la entrada “Gestión de Municipio/Asignación“ se selecciona el departamento y luego el municipio o municipios utilizando los selectores; se diligencian los datos y se carga el soporte correspondiente para la asignación al gestor y se da clic en el botón Asignar Gestor Catastral como se ve en la imagen.
 
 ![7-asignar-gestor-municipio.gif](images/administrador/7-asignar-gestor-municipio.gif)
 
