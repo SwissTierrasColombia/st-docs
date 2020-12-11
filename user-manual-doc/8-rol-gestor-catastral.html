@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ROL: GESTOR CATASTRAL &mdash; documentación de Documentación Sistema de Transición - v2.23.38</title>
+  <title>Rol: Gestor Catastral &mdash; documentación de Documentación Sistema de Transición - v2.23.38</title>
   
 
   
@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="ROL: OPERADOR" href="9-rol-operador.html" />
+    <link rel="next" title="Rol: Operador" href="9-rol-operador.html" />
     <link rel="prev" title="Rol: Administrador Del Sistema" href="7-rol-admin-sistema.html" /> 
 </head>
 
@@ -92,9 +92,14 @@
 <li class="toctree-l2"><a class="reference internal" href="5-descripcion-interfaz.html">Descripción de la interfaz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="6-rol-super-admin-sistema.html">Rol: Super Administrador Del Sistema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="7-rol-admin-sistema.html">Rol: Administrador Del Sistema</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ROL: GESTOR CATASTRAL</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#gestion-de-usuarios">Gestión de Usuarios</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Rol: Gestor Catastral</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gestion-de-usuarios">Gestión de Usuarios</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#listar-usuarios">Listar Usuarios</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#registrar-usuarios">Registrar Usuarios</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#gestion-de-municipio">Gestión de Municipio</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#busqueda-y-consulta-de-municipio-asignado">Búsqueda y consulta de municipio asignado</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#asignacion-de-operador">Asignación de Operador</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#descarga-de-informacion-para-la-gestion-catastral">Descarga de información para la Gestión Catastral</a></li>
 </ul>
@@ -111,7 +116,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="9-rol-operador.html">ROL: OPERADOR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9-rol-operador.html">Rol: Operador</a></li>
 <li class="toctree-l2"><a class="reference internal" href="10-rol-proveedor-insumos.html">ROL: PROVEEDOR DE INSUMOS</a></li>
 </ul>
 </li>
@@ -163,7 +168,7 @@
         
           <li><a href="../user-manual-doc.html">Manual de usuario</a> &raquo;</li>
         
-      <li>ROL: GESTOR CATASTRAL</li>
+      <li>Rol: Gestor Catastral</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,49 +188,79 @@
            <div itemprop="articleBody">
             
   <div class="section" id="rol-gestor-catastral">
-<h1>ROL: GESTOR CATASTRAL<a class="headerlink" href="#rol-gestor-catastral" title="Enlazar permanentemente con este título">¶</a></h1>
+<h1>Rol: Gestor Catastral<a class="headerlink" href="#rol-gestor-catastral" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El Gestor Catastral es el rol encargado de realizar la gestión catastral de los municipios asignados, asignar los Operadores que realizaran el barrido predial masivo (levantamiento catastral), solicitar insumos a los Proveedores, realizar peticione spara la caracterización de nuevos insumos, crear usuarios de perfil técnico asociados a la entidad del Gestor al que pertenecen.</p>
+<p>A continuación, se describen cada uno de los módulos que tiene acceso este rol.</p>
 <div class="section" id="gestion-de-usuarios">
 <h2>Gestión de Usuarios<a class="headerlink" href="#gestion-de-usuarios" title="Enlazar permanentemente con este título">¶</a></h2>
-<p><img alt="25-registrar-usuario-integrador.gif" src="../_images/25-registrar-usuario-integrador.gif" /></p>
+<p>En este módulo el Gestor con perfil administrador puede listar, crear y editar los usuarios de perfil técnico que pertenezcan a la entidad asociada al gestor, estos usuarios pueden realizar tareas de integración asistida y control de calidad sobre los productos recibidos del levantamiento catastral utilizando el <strong>Asistente LADM-COL</strong>.</p>
+<div class="section" id="listar-usuarios">
+<h3>Listar Usuarios<a class="headerlink" href="#listar-usuarios" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Se despliega al dar clic en menú lateral izquierdo en la entrada “Administrador/Listar Usuarios” y el sistema lista los usuarios registrados a la entidad asociada al Gestor junto con sus datos: perfil, usuario, nombres, apellidos, correo asociado, fecha de creación del usuario y las opciones de editar, activar/desactivar el usuario como se ve en la imagen.</p>
 <p><img alt="26-listar-usuarios.gif" src="../_images/26-listar-usuarios.gif" /></p>
+</div>
+<div class="section" id="registrar-usuarios">
+<h3>Registrar Usuarios<a class="headerlink" href="#registrar-usuarios" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Se despliega al dar clic en el menú lateral izquierdo en la entrada “Administrador/Registrar Usuarios” en el formulario se diligencian los campos: Nombres, Apellidos, nombre de usuario, correo electrónico que se asociara a la cuenta y en donde le llegaran todas las notificaciones del sistema así como la contraseña para ingresar, contraseña como se muestra en la imagen; en la parte inferior se debe escoger el perfil que se le asignara al usuario ya que dependiendo de esto el sistema le dará permisos para la ejecución de tareas específicas en el Asistente LADM-COL.</p>
+<p><img alt="25-registrar-usuario-integrador.gif" src="../_images/25-registrar-usuario-integrador.gif" /></p>
+</div>
 </div>
 <div class="section" id="gestion-de-municipio">
 <h2>Gestión de Municipio<a class="headerlink" href="#gestion-de-municipio" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En este módulo el Gestor puede revisar los datos básicos de la asignación del municipio para iniciar el proceso de gestión catastral, asignar el operador con el cual realizará el contrato de prestación de servicio para el levantamiento catastral del municipio; ingresa los datos básicos del mismo como área de intervención por parte del operador, número de predios a levantar, fecha de inicio y terminación, así como el cargue de los soportes del contrato y condiciones de entrega de la información en formato PDF; en esta misma interfaz el Gestor puede descargar o consultar la información base para la gestión catastral entregada por la Autoridad Catastral.</p>
+<div class="section" id="busqueda-y-consulta-de-municipio-asignado">
+<h3>Búsqueda y consulta de municipio asignado<a class="headerlink" href="#busqueda-y-consulta-de-municipio-asignado" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>A continuación, en la imagen siguiente se muestra cómo realizar la búsqueda en la interfaz del sistema de un municipio y consultar la información básica y soporte del municipio asignado para la gestión catastral</p>
 <p><img alt="1-buscar-municipio.gif" src="../_images/1-buscar-municipio.gif" /></p>
 <p><img alt="2-ver-info-basica-soporte.gif" src="../_images/2-ver-info-basica-soporte.gif" /></p>
+</div>
 <div class="section" id="asignacion-de-operador">
 <h3>Asignación de Operador<a class="headerlink" href="#asignacion-de-operador" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Una vez se tenga seleccionado el municipio de interés se pasa a la pestaña del formulario para asignar el Operador que realizará el levantamiento catastral del municipio, se debe seleccionar el operador habilitado en el sistema y creado por el Administrador, utilizando el selector se establece una fecha de inicio y finalización, número de predios y área a intervenir en km2, se describe el alcance y condiciones del contrato y se carga el soporte o soportes en formato PDF y se da clic en el botón “Asignar Operador”. Cabe notar que el Gestor puede iniciar la solicitud de insumos, integraciones y otras actividades en el sistema sin necesidad de haber asignado un Operador, pero si es necesario asignarlo en el momento de disponer insumos e iniciar el proceso de levantamiento catastral.</p>
 <p><img alt="3-asignar-operador.gif" src="../_images/3-asignar-operador.gif" /></p>
+<p>Una vez asignado el operador, el Gestor puede actualizar la información en esta misma interfaz, cambiando los datos que necesite y luego dando clic en el botón “Actualizar Operador”.</p>
 <p><img alt="4-actualizar-operador.gif" src="../_images/4-actualizar-operador.gif" /></p>
 </div>
 <div class="section" id="descarga-de-informacion-para-la-gestion-catastral">
 <h3>Descarga de información para la Gestión Catastral<a class="headerlink" href="#descarga-de-informacion-para-la-gestion-catastral" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En la pestaña “Información para la Gestión Catastral”, el Gestor puede descargar o consultar uno a uno los insumos que le hace entrega la Autoridad Catastral para la gestión catastral del municipio, los cuales harán parte esencial del sistema de información misional del Gestor habilitado. Estos insumos pueden descargasen si son archivos de un tamaño pequeño, pero en la mayoría de los casos pueden ser de gran tamaño por ello serán cargados en un sistema al que se accede a través de una URL o FTP para la descarga o consulta; o en otro caso serán entregados en un disco físico y lo que el Gestor descarga es la evidencia de la entrega física. También se dispone de un reporte de entrega de la información provista por la Autoridad Catastral que puede ser descargado, esta información se encontrará de forma permanente en esta interfaz mientras el municipio se encuentre asignado al Gestor.</p>
 <p><img alt="5.descargar-info-autoridad.gif" src="../_images/5.descargar-info-autoridad.gif" /></p>
 </div>
 </div>
 <div class="section" id="gestion-de-insumos">
 <h2>Gestión de Insumos<a class="headerlink" href="#gestion-de-insumos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En este módulo el Gestor realizará las actividades asociadas a la gestión de insumos para ser entregadas al Operador para el proceso de levantamiento catastral. Entre las funcionalidades esta la solicitud, generación de peticiones de insumos específicos, integración de archivos XTF, búsqueda de insumos cargados por los proveedores de insumos, desactivación y eliminación de insumos y entrega de insumos. A continuación, se describe cada una de estas funcionalidades.</p>
 <div class="section" id="solicitud-de-insumos">
 <h3>Solicitud de insumos<a class="headerlink" href="#solicitud-de-insumos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Se despliega al dar clic en el menú lateral izquierdo en la entrada “Insumos/Solicitud” se selecciona el departamento y luego el municipio utilizando los selectores, la interfaz carga de forma automática los datos básicos y muestra el selector de insumos disponibles en el sistema como se ve en la imagen. Al desplegar el selector “Entidad” se muestran las entidades proveedoras de insumos y en el selector “Insumos” se listan los insumos disponibles de ese proveedor, se escoge el insumo de interés y se diligencia el campo “Alcance/Observaciones” en donde se dan indicaciones a la solicitud como escala de la información y detalle con el fin de que el proveedor las tome en cuenta al entrega el insumo solicitado, luego se da clic en el botón “Agregar” y el registro se agrega a la lista de la parte inferior de la interfaz y se repite el procedimiento hasta agregar los insumos que se desean, si es necesario y se desea borrar un registro de la lista se puede dar clic en el icono “Eliminar”; al final se coloca una fecha para que el proveedor pueda cargar el insumo dentro de un tiempo estimado por el Gestor al sistema, la cual por defecto no podrá ser menor a 15 días.</p>
+<p>Se puede solicitar uno a varios insumos en la misma Orden y a diferentes proveedores y áreas de trabajo, de tal forma que el sistema las gestiona en varias solicitudes asociadas a un número de Orden único que se muestra en pantalla al enviar la solicitud para que el usuario pueda copiarlo para futuras consultas.</p>
 <p><img alt="6-solicitud-insumo.gif" src="../_images/6-solicitud-insumo.gif" /></p>
 </div>
 <div class="section" id="peticion-de-insumos">
 <h3>Petición de insumos<a class="headerlink" href="#peticion-de-insumos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Las peticiones son solicitudes puntuales a un proveedor de insumos para que se disponga un insumo que no está disponible en el sistema, el gestor realiza la petición y el proveedor define si dispone o no el insumo y le notifica al Gestor para que a través de la interfaz pueda solicitarlo una vez este caracterizado por parte del proveedor. Se recomienda al Gestor revisar cuidadosamente los insumos disponibles en el sistema antes de realizar una petición; para ingresar se da clic en la pestaña “Petición” y se diligencia el formulario que se muestra en la imagen, seleccionando el proveedor utilizando el selector y llenando el campo “Descripción” con los detalles del insumo a solicitar siendo lo más claro posible para que el proveedor tenga la suficiente información para caracterizar el insumo o para declinar la petición. Luego dar clic en el botón “Enviar petición”. En la parte inferior se muestra por medio de una lista las peticiones realizadas a los diferentes proveedores, para consultarlo se selecciona el proveedor utilizando el selector y el sistema despliega la información de forma automática y la muestra en la lista.</p>
 <p><img alt="7.peticion-insumo.gif" src="../_images/7.peticion-insumo.gif" />
 <img alt="8-ver-peticiones-realizadas.gif" src="../_images/8-ver-peticiones-realizadas.gif" /></p>
 </div>
 <div class="section" id="busqueda-de-solicitudes">
 <h3>Búsqueda de solicitudes<a class="headerlink" href="#busqueda-de-solicitudes" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><img alt="9-buscar-solicitudes-municipio.gif" src="../_images/9-buscar-solicitudes-municipio.gif" />
-<img alt="10-buscar-solicitud-proveedor.gif" src="../_images/10-buscar-solicitud-proveedor.gif" />
+<p>Esta funcionalidad se despliega al dar clic en el menú lateral izquierdo en la entrada “Insumos/Búsqueda de Solicitudes” este formulario está compuesto por tres pestañas que son los criterios de búsqueda para las solicitudes en el sistema: “Municipio”, “Proveedor”, “Orden”. Para la pestaña municipio se selecciona el departamento y luego el municipio utilizando los selectores y luego se da clic en el botón “Buscar”, en la parte inferior aparece una lista con una funcionalidad de búsqueda debido a que dependiendo del municipio puede haber un gran volumen de solicitudes. Los datos desplegados muestran el proveedor, insumo, fecha de solicitud, fecha límite (fecha sugerida de entrega), fecha de cargue y estado como se muestra en la imagen.</p>
+<p><img alt="9-buscar-solicitudes-municipio.gif" src="../_images/9-buscar-solicitudes-municipio.gif" /></p>
+<p>Para las otras dos pestañas, la interfaz funciona de forma similar como se ve en la imagen 26; se escoge el proveedor en la pestaña “Proveedor” y se da clic en el botón “Buscar” y para la pestaña “Orden” se ingresa el número de orden que se muestra en pantalla al realizar la solicitud como se mostró en la sección Solicitud de insumos. Se carga la lista de solicitudes realizadas por el Gestor con los mismos atributos descritos para el criterio de “Municipio”.</p>
+<p><img alt="10-buscar-solicitud-proveedor.gif" src="../_images/10-buscar-solicitud-proveedor.gif" />
 <img alt="11-buscar-solicitud-order.gif" src="../_images/11-buscar-solicitud-order.gif" /></p>
 </div>
 <div class="section" id="integracion-de-archivos-xtf">
 <h3>Integración de archivos XTF<a class="headerlink" href="#integracion-de-archivos-xtf" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><img alt="20-realizar-integracion-automatica.gif" src="../_images/20-realizar-integracion-automatica.gif" />
-<img alt="21-historico-integracion.gif" src="../_images/21-historico-integracion.gif" />
-<img alt="22-opciones-despues-de-integrar.gif" src="../_images/22-opciones-despues-de-integrar.gif" />
-<img alt="23-generar-producto.gif" src="../_images/23-generar-producto.gif" />
+<p>Esta funcionalidad permite al rol Gestor realizar integraciones de archivos (unir en un solo archivo emparejando predios (registros)) que se encuentran en el submodelo de insumos 1.0 LADM-COL, en el formato de intercambio XTF con los datos de los municipios que inician el proceso de levantamiento catastral, entregados por parte de los proveedores de insumos de catastro(IGAC o catastros descentralizados, registro (SNR) y ANT; previa solicitud del Gestor.</p>
+<p>Para acceder a esta funcionalidad se despliega al dar clic en el menú lateral izquierdo de la interfaz en la entrada “Insumos/Integración” este formulario está compuesto por tres pestañas “Integraciones en ejecución”, Candidatos a integración” “Integración de Insumos”, que se utilizan para desplegar la información de las integraciones de archivos XTF. La primera pestaña despliega una lista de las integraciones activas en el sistema para los municipios asignados al Gestor, cuenta con una funcionalidad de búsqueda que permite a través de palabras clave encontrar los datos del municipio de interés; en la lista adicional a los datos básicos se puede ver los resultados de una integración como el número de registros catastrales, número de registros de la SNR, total integrados, porcentaje y el panel de opciones como se ve a continuación:</p>
+<p><img alt="20-realizar-integracion-automatica.gif" src="../_images/20-realizar-integracion-automatica.gif" /></p>
+<p>La segunda pestaña, muestra los candidatos a integración de los municipios asignados al Gestor mostrando los datos básicos del municipio candidato y al dar clic en el icono “Ver” lo envía a la tercera pestaña donde se lanza la integración automática; el sistema realiza esto al detectar que se han cargado mínimo dos archivos XTF en el submodelo de insumos v 1.0 de datos catastrales y datos registrales de un municipio y con ello se puede realizar una integración (emparejamiento) de los datos coincidentes de los predios de ambos archivos y el sistema podrá diligenciar la tabla de emparejamiento que tiene el submodelo utilizando sus identificadores y tipo de emparejamiento utilizado y así entregar la información catastral y registral en un solo archivo. Esta podrá ser evaluada por el Gestor y de acuerdo con los porcentajes de cruce tomará la decisión de generar un archivo XTF final para entrega al Operador o si finalmente el porcentaje de emparejamiento no es aceptable eliminar la integración y solicitar nuevos archivos XTF al proveedor de insumos para realizar una nueva integración y así mejorar el porcentaje.</p>
+<p>Dato Importante: El sistema utiliza únicamente como identificadores para realizar la integración automática de archivos XTF, el atributo Matricula_Inmobiliaria del archivo SNR y “Matricula_Inmobiliaria_Catastro” del archivo Catastro (EMPAREJAMIENTO Tipo_6).</p>
+<p><img alt="21-historico-integracion.gif" src="../_images/21-historico-integracion.gif" />
+<img alt="22-opciones-despues-de-integrar.gif" src="../_images/22-opciones-despues-de-integrar.gif" /></p>
+<p>En la tercera pestaña utilizando los selectores se escoge el departamento y municipio de la lista y luego se muestra si hay archivos disponibles para iniciar una integración como se ve en la imagen; es posible que se cargue más de una versión para el mismo municipio por lo que el Gestor deberá escoger con cual versión se realizará la integración, en caso de que previamente ya se haya realizado una integración con estos archivos el sistema lo advertirá y solicitara escoger otros archivos. En la parte inferior se muestra el historial de integraciones y las mismas opciones disponibles en la primera pestaña.</p>
+<p><img alt="23-generar-producto.gif" src="../_images/23-generar-producto.gif" />
 <img alt="24-producto-generado.gif" src="../_images/24-producto-generado.gif" /></p>
 </div>
 <div class="section" id="integracion-asistida-utilizando-el-asistente-ladm-col-perfil-tecnico">
@@ -233,16 +268,22 @@
 </div>
 <div class="section" id="busqueda-de-insumos">
 <h3>Búsqueda de insumos<a class="headerlink" href="#busqueda-de-insumos" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><img alt="12-busqueda-insumos.gif" src="../_images/12-busqueda-insumos.gif" />
-<img alt="13-activar-insumo.gif" src="../_images/13-activar-insumo.gif" />
-<img alt="14-desactivar-insumo.gif" src="../_images/14-desactivar-insumo.gif" />
-<img alt="15-eliminar-insumo.gif" src="../_images/15-eliminar-insumo.gif" />
-<img alt="16-descarga-insumo.gif" src="../_images/16-descarga-insumo.gif" /></p>
+<p>Esta funcionalidad permite que el Gestor pueda hacer una búsqueda y liste los insumos que están cargados en el sistema para revisarlos y alistarlos antes de realizar la entrega al Operador.</p>
+<p>Se despliega al dar clic en el menú lateral izquierdo en la entrada “Insumos/Búsqueda de Insumos” se selecciona el departamento y luego el municipio utilizando los selectores, luego se da clic en el botón “Buscar” la interfaz carga una lista con los insumos disponibles en el sistema como se ve en la imagen.</p>
+<p><img alt="12-busqueda-insumos.gif" src="../_images/12-busqueda-insumos.gif" /></p>
+<p>Entre los campos de importancia se tiene el campo “estado” en donde se muestra si un insumo esta activo o inactivo, entre las opciones se tiene el de “descarga” por parte del Gestor para su revisión antes de ser entregado, el botón “Activar/Desactivar” ya que un insumo se puede desactivarse sino se quiere entregar al Operador y con esto no se lista en la interfaz de entrega de insumos, y finalmente el campo “Eliminar” en donde dando clic en el icono se puede eliminar el insumo del sistema sino se necesita. En esta interfaz se cuenta con una funcionalidad de búsqueda que permite a través de palabras clave buscar los insumos de municipio de interés.</p>
+<p><img alt="16-descarga-insumo.gif" src="../_images/16-descarga-insumo.gif" /></p>
+<p><img alt="13-activar-insumo.gif" src="../_images/13-activar-insumo.gif" /></p>
+<p><img alt="14-desactivar-insumo.gif" src="../_images/14-desactivar-insumo.gif" /></p>
+<p><img alt="15-eliminar-insumo.gif" src="../_images/15-eliminar-insumo.gif" /></p>
 </div>
 <div class="section" id="entrega-de-insumos">
 <h3>Entrega de insumos<a class="headerlink" href="#entrega-de-insumos" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><img alt="17-entrega-insumo.gif" src="../_images/17-entrega-insumo.gif" />
-<img alt="18-entrega-realizada.gif" src="../_images/18-entrega-realizada.gif" />
+<p>Esta funcionalidad le permite al Gestor realizar la entrega de los insumos del municipio al Operador para realizar el levantamiento catastral. Se despliega al dar clic en el menú lateral izquierdo en la entrada “Insumos/Entrega” se selecciona el departamento y luego el municipio utilizando los selectores, luego se da clic en el botón “Buscar” la interfaz carga una lista con los insumos disponibles en el sistema para ser entregados como se ve en la imagen.</p>
+<p>En la lista se tiene el nombre del insumo con el nombre de la entidad que lo generó, la fecha de cargue, observaciones del insumo por parte del proveedor, un botón de selección y un campo de observación de la entrega. El Gestor selecciona uno a uno los insumos que desea entregar activando el botón de selección e introduce una observación de la entrega, al final diligencia un campo con la observación general de la entrega y en ese momento se le activa el botón “Entregar insumos” para realizarla.</p>
+<p><img alt="17-entrega-insumo.gif" src="../_images/17-entrega-insumo.gif" /></p>
+<p>El Gestor puede consultar los insumos entregados al dar clic en el menú lateral izquierdo en la entrada “Insumos/Entregas realizadas” en donde se le listaran todas las entregas que ha realizado y al dar clic en el icono “Ver” podrá acceder a los detalles de la entrega y descargar el reporte de entrega de insumos al Operador.</p>
+<p><img alt="18-entrega-realizada.gif" src="../_images/18-entrega-realizada.gif" />
 <img alt="19-descargar-reporte-entrega.gif" src="../_images/19-descargar-reporte-entrega.gif" /></p>
 </div>
 </div>
@@ -256,7 +297,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="9-rol-operador.html" class="btn btn-neutral float-right" title="ROL: OPERADOR" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="9-rol-operador.html" class="btn btn-neutral float-right" title="Rol: Operador" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="7-rol-admin-sistema.html" class="btn btn-neutral float-left" title="Rol: Administrador Del Sistema" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

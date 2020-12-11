@@ -1,5 +1,6 @@
 # Descripción de la interfaz
-La interfaz del Sistema se compone básicamente de una página de autenticación y otra página que es el contenedor de los módulos y las funcionalidades del Sistema de Transición. A continuación, en la imagen 3a se explica cada componente de la interfaz.
+
+La interfaz del Sistema se compone básicamente de una página de autenticación y otra página que es el contenedor de los módulos y las funcionalidades del Sistema de Transición. A continuación, en la imagen se explica cada componente de la interfaz.
 
 Compuesta por las siguientes secciones:
 1. Dirección web donde se encuentra alojado el Sistema, esta URL la proveerá la entidad encargada de administrar el Sistema.
