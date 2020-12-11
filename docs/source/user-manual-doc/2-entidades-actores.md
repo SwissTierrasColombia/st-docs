@@ -1,6 +1,6 @@
 # Entidades y/o actores del sistema
 
-En las actividades definidas en la imagen 1 que se programaron en el Sistema de Transición Web, se identifican las entidades y roles que están involucrados directamente con la gestión de información en el sistema, los cuales se describen a continuación:
+En las actividades definidas en la imagen [Flujo de actividades en el Sistema de Transición](https://swisstierrascolombia.github.io/st-docs/_images/flujo.png) que se programaron en el Sistema de Transición Web, se identifican las entidades y roles que están involucrados directamente con la gestión de información en el sistema, los cuales se describen a continuación:
 
 ## Entidades
 
@@ -24,11 +24,11 @@ En las actividades definidas en la imagen 1 que se programaron en el Sistema de 
 - **Operador Catastral**: Entidad encargada dentro del sistema de recibir y descargar los insumos del municipio asignado para iniciar las labores de barrido predial masivo en los municipios asignados.
 - **Proveedor de Insumo**: Entidad encargada de suministrar los insumos solicitados por parte del gestor para el municipio asignado de acuerdo con la caracterización de insumos del sistema y el perfil de proveedor asignado (catastral, cartográfico, agrologico, registral, ANT).
 
-De acuerdo con lo anterior, en la siguiente tabla (nº1), se muestra en la parte izquierda los usuarios definidos para el sistema de transición Web y los permisos asociados a ellos, en la parte derecha se muestra los módulos propuestos para la gestión de pantallas dentro del sistema y la relación con cada uno de los perfiles propuestos. 
+De acuerdo con lo anterior, en la siguiente imagen, se muestra los usuarios definidos para el sistema de transición Web y los permisos asociados a ellos para la gestión de pantallas dentro del sistema y la relación con cada uno de los perfiles propuestos. 
 
 ![tabla](images/tabla.png)<center><small>Definición de usuarios y perfiles en el Sistema de Transición</small></center>
 
-**NOTA IMPORTANTE**: De acuerdo con lo descrito en la sección 1 y 2, los módulos y las funcionalidades que se describen a continuación estarán visibles en el menú de la interfaz de la aplicación de acuerdo con el perfil asignado y solo estarán disponibles las tareas que se puede ejecutar dentro del sistema.
+**NOTA IMPORTANTE**: De acuerdo con lo anterior, los módulos y las funcionalidades que se describen a continuación estarán visibles en el menú de la interfaz de la aplicación de acuerdo con el perfil asignado y solo estarán disponibles las funcionalidades que se puede ejecutar dentro del sistema.
 
 
 
