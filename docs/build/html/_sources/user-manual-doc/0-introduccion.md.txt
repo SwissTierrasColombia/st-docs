@@ -1,4 +1,0 @@
-# Introducción
-En este manual se describen las funcionalidades básicas del Sistema de Transición el cual se concibe como una herramienta en un ambiente Web que permite apoyar la gestión de información necesaria para realizar las tareas del barrido predial en campo por parte de las entidades y actores involucrados en el proceso de Levantamiento Catastral en Colombia.
-
-Se inicia explicando de forma sencilla y práctica el flujo de actividades que son necesarias para la gestión de información y luego se describe cada una de las funcionalidades que se han desarrollado hasta el momento de acuerdo con los módulos y perfiles de usuario definidos dentro de la herramienta, este manual se irá actualizando con las nuevas funcionalidades que se agreguen ya que es un sistema que se encuentra en etapa de desarrollo. 
