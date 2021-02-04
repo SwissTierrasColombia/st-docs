@@ -1,4 +1,5 @@
 # Funcionalidades
+<div style="text-align: justify">
 
 El sistema tiene funcionalidades asociadas a cada uno de los roles y estas se despliegan en los menús del panel lateral de la interfaz una vez el usuario ingresa, se despliegan de acuerdo con el perfil y permisos que cada usuario tiene en el sistema. Con el fin de que el lector pueda ubicar la funcionalidad a utilizar del sistema a continuación se muestra la siguiente tabla de funcionalidades según el rol que se desee consultar.
 
@@ -56,3 +57,4 @@ El sistema tiene funcionalidades asociadas a cada uno de los roles y estas se de
       - Cargue de insumo Catastral ETL Cobol (Perfil Técnico)
       - Caso especial SNR (revisión y cargue de adjuntos PDF “cabida y linderos”)
       - Solicitudes atendidas (Perfil Técnico)
+</div>

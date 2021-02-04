@@ -1,4 +1,5 @@
 # Descripción de la interfaz
+<div style="text-align: justify">
 
 La interfaz del Sistema se compone básicamente de una página de autenticación y otra página que es el contenedor de los módulos y las funcionalidades del Sistema de Transición. A continuación, en la imagen se explica cada componente de la interfaz.
 
@@ -49,3 +50,5 @@ En la parte inferior del formulario de datos básicos del usuario se puede actua
 En la parte superior derecha se da clic en la flecha para desplegar las opciones de usuario y se da clic en “Cerrar sesión“ con esto se termina la sesión del usuario y lo regresa a la pantalla de autenticación.
 
 <a href="https://swisstierrascolombia.github.io/st-docs/_images/6-cerrar-login.gif" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/6-cerrar-login.gif"></a>
+
+</div>
