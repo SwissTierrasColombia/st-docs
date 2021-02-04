@@ -1,4 +1,5 @@
 # Entidades y/o actores del sistema
+<div style="text-align: justify">
 
 En las actividades definidas en la imagen [Flujo de actividades en el Sistema de Transición](https://swisstierrascolombia.github.io/st-docs/_images/flujo.png) que se programaron en el Sistema de Transición Web, se identifican las entidades y roles que están involucrados directamente con la gestión de información en el sistema, los cuales se describen a continuación:
 
@@ -30,6 +31,7 @@ De acuerdo con lo anterior, en la siguiente imagen, se muestra los usuarios defi
 
 **NOTA IMPORTANTE**: De acuerdo con lo anterior, los módulos y las funcionalidades que se describen a continuación estarán visibles en el menú de la interfaz de la aplicación de acuerdo con el perfil asignado y solo estarán disponibles las funcionalidades que se puede ejecutar dentro del sistema.
 
+</div>
 
 
 

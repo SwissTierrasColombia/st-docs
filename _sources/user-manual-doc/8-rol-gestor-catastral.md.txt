@@ -1,4 +1,5 @@
 # Rol: Gestor Catastral
+<div style="text-align: justify">
 
 El Gestor Catastral es el rol encargado de realizar la gestión catastral de los municipios asignados, asignar los Operadores que realizaran el barrido predial masivo (levantamiento catastral), solicitar insumos a los Proveedores, realizar peticione spara la caracterización de nuevos insumos, crear usuarios de perfil técnico asociados a la entidad del Gestor al que pertenecen.
 
@@ -135,3 +136,5 @@ El Gestor puede consultar los insumos entregados al dar clic en el menú lateral
 <a href="https://swisstierrascolombia.github.io/st-docs/_images/18-entrega-realizada.gif" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/18-entrega-realizada.gif"></a>
 
 <a href="https://swisstierrascolombia.github.io/st-docs/_images/19-descargar-reporte-entrega.gif" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/19-descargar-reporte-entrega.gif"></a>
+
+</div>
