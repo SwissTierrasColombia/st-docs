@@ -26,7 +26,7 @@ En las actividades definidas en la imagen [Flujo de actividades en el Sistema de
 
 De acuerdo con lo anterior, en la siguiente imagen, se muestra los usuarios definidos para el sistema de transición Web y los permisos asociados a ellos para la gestión de pantallas dentro del sistema y la relación con cada uno de los perfiles propuestos. 
 
-[![tabla](images/tabla.png)](https://swisstierrascolombia.github.io/st-docs/_images/tabla.png)<center><small>Definición de usuarios y perfiles en el Sistema de Transición</small></center>
+<a href="https://swisstierrascolombia.github.io/st-docs/_images/tabla.png" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/tabla.png"> <center><small>Definición de usuarios y perfiles en el Sistema de Transición</small></center></a>
 
 **NOTA IMPORTANTE**: De acuerdo con lo anterior, los módulos y las funcionalidades que se describen a continuación estarán visibles en el menú de la interfaz de la aplicación de acuerdo con el perfil asignado y solo estarán disponibles las funcionalidades que se puede ejecutar dentro del sistema.
 
