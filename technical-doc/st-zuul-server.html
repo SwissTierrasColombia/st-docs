@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Microservicio st-zuul-server &mdash; documentación de Documentación Sistema de Transición - v2.23.38</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/mystyle.css" type="text/css" />
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Microservicio st-microservice-oauth" href="st-microservice-oauth.html" />
+    <link rel="prev" title="Microservicio st-eureka-server" href="st-eureka-server.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Documentación Sistema de Transición
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user-manual-doc.html">Manual de usuario</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../technical-doc.html">Documentación técnica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html">Manual de despliegue ST (docker)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="version.html">Versionamiento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html">Jerarquía de Usuarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="databases.html">Base de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-configuration-properties.html">Repositorio de Configuración</a></li>
+<li class="toctree-l2"><a class="reference internal" href="general-settings.html">Configuraciones Generales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-rabbitmq.html">RabbitMQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-config-server.html">Microservicio st-config-server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-eureka-server.html">Microservicio st-eureka-server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Microservicio st-zuul-server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configurar-propiedades">Configurar propiedades</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#url-servidor-eureka">URL Servidor Eureka</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#puerto-del-servidor">Puerto del Servidor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#clonar-repositorio">Clonar repositorio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#crear-imagen-docker">Crear imagen docker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ejecutar-el-contenedor">Ejecutar el contenedor</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-oauth.html">Microservicio st-microservice-oauth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-administration.html">Microservicio st-microservice-administration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-managers.html">Microservicio st-microservice-managers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-providers.html">Microservicio st-microservice-providers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-operators.html">Microservicio st-microservice-operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-supplies.html">Microservicio st-microservice-supplies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-tasks.html">Microservicio st-microservice-tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-workspaces.html">Microservicio st-microservice-workspaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-ili.html">Microservicio st-microservice-ili</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-notifier.html">Microservicio st-microservice-notifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-microservice-reports.html">Microservicio st-microservice-reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="st-site-web.html">Servidor st-site-web</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentación Sistema de Transición</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../technical-doc.html">Documentación técnica</a> &raquo;</li>
+        
+      <li>Microservicio st-zuul-server</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/technical-doc/st-zuul-server.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="microservicio-st-zuul-server">
+<h1>Microservicio st-zuul-server<a class="headerlink" href="#microservicio-st-zuul-server" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Funciona como puerta enlace a todos los demás microservicios, de igual forma se comporta como un servidor de recurso protegiendo los endpoints.</p>
+<p>Para realizar el despliegue se deben seguir las siguientes indicaciones:</p>
+<div class="section" id="configurar-propiedades">
+<h2>Configurar propiedades<a class="headerlink" href="#configurar-propiedades" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En el archivo <em><strong>st-zuul-server.yml</strong></em> se encuentran las propiedades de configuración del microservicio. Se pueden modificar las siguientes propiedades:</p>
+<div class="section" id="url-servidor-eureka">
+<h3>URL Servidor Eureka<a class="headerlink" href="#url-servidor-eureka" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Si se requiere cambiar la url del servidor de descubrimiento eureka, se debe modificar la siguiente propiedad:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">eureka</span><span class="p">:</span>
+  <span class="nt">client</span><span class="p">:</span>
+    <span class="nt">serviceUrl</span><span class="p">:</span>
+      <span class="nt">defaultZone</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http://st-eureka-server:8762/eureka</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="puerto-del-servidor">
+<h3>Puerto del Servidor<a class="headerlink" href="#puerto-del-servidor" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Si se requiere cambiar el puerto donde se ejecuta el servicio, se debe modificar la siguiente propiedad:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">server</span><span class="p">:</span>
+  <span class="nt">port</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">8091</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="clonar-repositorio">
+<h2>Clonar repositorio<a class="headerlink" href="#clonar-repositorio" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se debe clonar el repositorio <a class="reference external" href="https://github.com/SwissTierrasColombia/st-zuul-server"><strong>st-zuul-server</strong></a> almacenado en github y posteriormente generar el jar del proyecto a través de maven.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/SwissTierrasColombia/st-zuul-server.git
+$ <span class="nb">cd</span> st-zuul-server <span class="o">&amp;&amp;</span> git checkout master
+$ mvn clean package -DskipTests
+</pre></div>
+</div>
+</div>
+<div class="section" id="crear-imagen-docker">
+<h2>Crear imagen docker<a class="headerlink" href="#crear-imagen-docker" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se debe crear la imagen docker a partir del archivo Dockerfile que se encuentra en el repositorio, esta imagen requiere que se le pasen los siguientes argumentos:</p>
+<ul class="simple">
+<li><p><strong>XMX</strong>: Límite en RAM que el jar utilizará.</p></li>
+<li><p><strong>PROFILE</strong>: Perfil o ambiente en el cual se ejecutará el jar. En producción se debe usar el perfil production.</p></li>
+<li><p><strong>CLOUD_CONFIG</strong>: Url del servidor de configuración.</p></li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ docker build -t st-zuul-server:lynx --build-arg <span class="nv">XMX</span><span class="o">=</span>&lt;xmx&gt; --build-arg <span class="nv">PROFILE</span><span class="o">=</span>&lt;perfil&gt; --build-arg <span class="nv">CLOUD_CONFIG</span><span class="o">=</span>&lt;url-cloud-config&gt; .
+</pre></div>
+</div>
+<p>Por ejemplo:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ docker build -t st-zuul-server:lynx --build-arg <span class="nv">XMX</span><span class="o">=</span>3072m --build-arg <span class="nv">PROFILE</span><span class="o">=</span>production --build-arg <span class="nv">CLOUD_CONFIG</span><span class="o">=</span>http://st-config-server:8890 .
+</pre></div>
+</div>
+</div>
+<div class="section" id="ejecutar-el-contenedor">
+<h2>Ejecutar el contenedor<a class="headerlink" href="#ejecutar-el-contenedor" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se debe ejecutar el contenedor a partir de la imagen creada asignando un límite de memoria RAM, la red docker previamente creada y un puerto de acceso.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ docker run -p &lt;puerto&gt;:8091 --name st-zuul-server --network &lt;nombre-red-docker&gt; -m &lt;ram&gt; -d st-zuul-server:lynx
+</pre></div>
+</div>
+<p>Por ejemplo:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ docker run -p <span class="m">8091</span>:8091 --name st-zuul-server --network st -m 4096M -d st-zuul-server:lynx
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="st-microservice-oauth.html" class="btn btn-neutral float-right" title="Microservicio st-microservice-oauth" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="st-eureka-server.html" class="btn btn-neutral float-left" title="Microservicio st-eureka-server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, SwissTierras Colombia
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
