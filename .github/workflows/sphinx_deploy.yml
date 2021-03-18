@@ -34,5 +34,5 @@ jobs:
       with:
         branch: gitpage
         directory: gitpage
-        github_token: ${{ secrets.API_TOKEN_GITHUB }}
-        repository: 'SwissTierrasColombia/st-docs'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        repository: ' SwissTierrasColombia/st-docs'
