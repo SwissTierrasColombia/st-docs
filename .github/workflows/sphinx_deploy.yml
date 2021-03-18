@@ -18,7 +18,7 @@ jobs:
     - name: Commit documentation changes
       run: |
         git clone https://github.com/SwissTierrasColombia/st-docs.git --branch gitpage --single-branch gitpage
-        rm -r st-docs/*
+        rm -r gitpage/*
         cp -r source/_build/* gitpage/
         cd gitpage
         touch .nojekyll
