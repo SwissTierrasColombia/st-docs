@@ -1,5 +1,4 @@
 # Rol: Súper Administrador Del Sistema
-<div style="text-align: justify">
 
 Este rol tiene funciones de mantenimiento en el sistema y de creación de usuarios administradores del sistema, este usuario es importante para dar un control y seguridad en la gestión del usuario administrador.
 ## Gestión de Usuarios
@@ -24,5 +23,3 @@ Se da clic en menú lateral izquierdo en la entrada “Administrador/Listar Usua
 Se despliega al dar clic en el menú lateral izquierdo en la entrada “Administrador/Registrar Usuarios“ en el formulario se diligencian los campos: Nombre, Apellido, nombre de usuario, correo electrónico que se asociara a la cuenta y al que le llegarán todas las notificaciones del Sistema así como la contraseña para ingresar como se ve en la imagen; es de notar que los usuarios creados en este formulario solo pertenecen al rol Administrador del Sistema los cuales están asociados a las funciones que ejerce la **AUTORIDAD CATASTRAL** en el Sistema.
 
 <a href="https://swisstierrascolombia.github.io/st-docs/_images/2-registro-usuario-admin.gif" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/2-registro-usuario-admin.gif"></a>
-
-</div>

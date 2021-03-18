@@ -1,5 +1,4 @@
 # Rol: Proveedor de Insumos
-<div style="text-align: justify">
 
 El rol de Proveedor de Insumos está dispuesto para ser utilizado por las entidades de orden nacional, departamental o municipal que generen insumos necesarios para realizar las actividades de levantamiento catastral, estas entidades son creadas en el Sistema y dependiendo del perfil que se les asigne (Administrador o Técnico) podrán tener a acceso a funcionalidades que les permitirán atender las solicitudes de insumos que se les realicen por parte del rol Gestor.
 
@@ -127,5 +126,3 @@ Después de haber cargado los insumos solicitados por parte del Gestor y haber c
 <a href="https://swisstierrascolombia.github.io/st-docs/_images/1-entregar-sin-revision.gif" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/1-entregar-sin-revision.gif"></a>
 
 En esta interfaz se muestra el detalle de una solicitud atendida en donde se listan los insumos entregados con los datos de la solicitud y con los siguientes campos de la entrega: Nombre del insumo entregado, Estado de la entrega, Observación de la entrega, Fecha de cargue del insumo y el nombre del usuario que lo cargo al Sistema. En la parte superior izquierda hay un icono de “Volver“ con el que el usuario retorna a la lista de solicitudes atendidas.
-
-</div>

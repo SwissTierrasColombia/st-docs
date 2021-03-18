@@ -1,5 +1,4 @@
 # Rol: Administrador Del Sistema
-<div style="text-align: justify">
 
 El administrador del sistema es el rol encargado de realizar principalmente la asignación de los municipios para iniciar la gestión catastral a los gestores habilitados, creación de entidades: gestores, operadores y proveedores de insumos; y usuarios de perfil “Administrador” de cada una las entidades.
 
@@ -82,5 +81,3 @@ Se despliega al dar clic en la cuarta pestaña del formulario de espacio de trab
 Después de disponer la información para la gestión catastral al Gestor se puede generar y descargar un reporte de entrega de la información en formato PDF como se muestra en la imagen.
 
 <a href="https://swisstierrascolombia.github.io/st-docs/_images/9-descargar-reporte-autoridad.gif" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/9-descargar-reporte-autoridad.gif"></a>
-
-</div>
