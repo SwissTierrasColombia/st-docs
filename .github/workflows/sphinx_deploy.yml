@@ -14,11 +14,11 @@ jobs:
       with:
         build-command: "sphinx-build -b html . _build"
         docs-folder: "source/"
-        
+
     - name: Commit documentation changes
       run: |
         git clone https://github.com/SwissTierrasColombia/st-docs.git --branch gitpage --single-branch gitpage
-        rm -r gitpage/*
+        rm -r st-docs/*
         cp -r source/_build/* gitpage/
         cd gitpage
         touch .nojekyll
@@ -28,7 +28,7 @@ jobs:
         git commit -m "Update documentation from ST" -a || true
         # The above command will fail if no changes were present, so we ignore
         # that.
-        
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
