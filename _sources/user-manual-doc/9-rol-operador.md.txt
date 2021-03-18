@@ -1,5 +1,4 @@
 # Rol: Operador
-<div style="text-align: justify">
 
 El Operador es el rol encargado de realizar el levantamiento catastral de los municipios asignados, para esta versión del sistema tiene acceso solo al módulo de Insumos en donde puede realizar la descarga de los insumos que el Gestor dispone para iniciar el proceso de levantamiento catastral en los municipios contratados, la funcionalidad de crear usuarios asociados a su entidad no está disponible para esta versión el sistema.
 
@@ -42,5 +41,3 @@ Se despliega al dar clic en el menú lateral izquierdo en la entrada “Insumos/
 Una vez se ingrese a alguno de los registros se muestra el detalle en donde se tienen los datos generales de la descarga por parte del Operador y en la parte superior derecha se encuentra el icono para la consulta y descarga del reporte general de la entrega que se generó en el momento de cerrar el registro de la entrega; a continuación en la parte inferior se muestra un listado con los insumos descargados con los siguientes campos: nombre del insumo descargado, observaciones, fecha de descarga, nombre del usuario que realizó la descarga y su correo como se ve en la imagen. Esta interfaz sirve de apoyo al usuario para llevar un registro de las descargas de insumos realizadas.
 
 <a href="https://swisstierrascolombia.github.io/st-docs/_images/7-descargar-reporte-descarga-realizada.gif" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/7-descargar-reporte-descarga-realizada.gif"></a>
-
-</div>

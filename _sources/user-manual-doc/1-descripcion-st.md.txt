@@ -1,6 +1,5 @@
 # Descripción del sistema de transición
 
-<div style="text-align: justify">
 Para el desarrollo del sistema se contemplan de forma general las actividades que se necesitan para la gestión de información en el marco del barrido predial masivo (bmp) con un alcance acotado hasta el momento de disposición y entrega de los insumos al operador por parte del gestor catastral como se muestra en la imagen; en donde se inicia con la autenticación de cada uno de los perfiles y se termina con la descarga de los insumos por parte del operador a través del sistema. 
 
 <a href="https://swisstierrascolombia.github.io/st-docs/_images/flujo.png" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/flujo.png"> <center><small>Flujo de actividades en el Sistema de Transición</small></center></a>
@@ -15,4 +14,3 @@ En la parte superior de la imagen, se muestran cuatro actores que interactúan e
 6. Búsqueda de insumos cargados al sistema.
 7. Disposición de insumos al operador.
 8. Descarga de insumos.
-</div>
