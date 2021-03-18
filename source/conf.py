@@ -13,7 +13,6 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
@@ -30,16 +29,19 @@ release = 'v2.23.38'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'recommonmark',
-    'sphinx_rtd_theme',
-    'rst2pdf.pdfbuilder'
+    'sphinx_markdown_tables',
+    'sphinx.ext.githubpages',
+    'sphinx.ext.todo',
+    'sphinxcontrib.images',
+    'sphinx.ext.viewcode',
+    'sphinx.ext.autodoc',
+    'recommonmark'
     ]
 
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.txt': 'markdown',
-    '.md': 'markdown',
-}
+source_suffix = ['.rst', '.md']
+
+# The master toctree document.
+master_doc = 'index'
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -53,7 +55,7 @@ language = 'es'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -62,6 +64,14 @@ exclude_patterns = []
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
+
+# Theme options are theme-specific and customize the look and feel of a theme
+# further.  For a lhtml_theme = "classic"
+# documentation.
+html_theme_options = {
+    'display_version': 'true',
+    'sticky_navigation': 'true'
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -72,3 +82,21 @@ html_static_path = ['_static']
 html_css_files = [
     'mystyle.css',
 ]
+
+
+html_logo = '_static/logo_st.png'
+
+# -- Extension configuration -------------------------------------------------
+import sys,os
+sys.path.insert(0, os.path.abspath(".."))
+
+images_config = {
+    'override_image_directive': True,
+    'default_image_width': '100%',
+    'show_caption': True,
+    'download': True
+    }
+
+gettext_compact = False
+gettext_enables = ['index']
+gettext_ignore_index = False
