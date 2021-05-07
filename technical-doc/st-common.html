@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Jerarquía de Usuarios &mdash; documentación de Documentación Sistema de Transición - v2.23.38</title>
+  <title>Componente st-common &mdash; documentación de Documentación Sistema de Transición - v2.23.38</title>
   
 
   
@@ -41,8 +41,8 @@
   <link rel="stylesheet" href="../_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="Base de datos" href="databases.html" />
-    <link rel="prev" title="Versionamiento" href="version.html" /> 
+    <link rel="next" title="Microservicio st-microservice-oauth" href="st-microservice-oauth.html" />
+    <link rel="prev" title="Microservicio st-zuul-server" href="st-zuul-server.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -95,7 +95,6 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../technical-doc.html">Documentación técnica</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="index.html">Manual de despliegue ST (docker)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="version.html">Versionamiento</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Jerarquía de Usuarios</a></li>
 <li class="toctree-l2"><a class="reference internal" href="databases.html">Base de datos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="st-configuration-properties.html">Repositorio de Configuración</a></li>
 <li class="toctree-l2"><a class="reference internal" href="general-settings.html">Configuraciones Generales</a></li>
@@ -103,6 +102,11 @@
 <li class="toctree-l2"><a class="reference internal" href="st-config-server.html">Microservicio st-config-server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="st-eureka-server.html">Microservicio st-eureka-server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="st-zuul-server.html">Microservicio st-zuul-server</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Componente st-common</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clonar-repositorio">Clonar repositorio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instalar-jar-en-el-repositorio-local-de-maven">Instalar JAR en el repositorio local de maven</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="st-microservice-oauth.html">Microservicio st-microservice-oauth</a></li>
 <li class="toctree-l2"><a class="reference internal" href="st-microservice-administration.html">Microservicio st-microservice-administration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="st-microservice-managers.html">Microservicio st-microservice-managers</a></li>
@@ -164,13 +168,13 @@
         
           <li><a href="../technical-doc.html">Documentación técnica</a> &raquo;</li>
         
-      <li>Jerarquía de Usuarios</li>
+      <li>Componente st-common</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/technical-doc/users.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/technical-doc/st-common.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -183,52 +187,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="jerarquia-de-usuarios">
-<h1>Jerarquía de Usuarios<a class="headerlink" href="#jerarquia-de-usuarios" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>El sistema de transición se define a partir de roles y subroles  a conocer:</p>
-<p><img alt="roles" src="../_images/roles.png" /></p>
-<p>De la anterior imagen se evidencia los siguientes roles:</p>
+  <div class="section" id="componente-st-common">
+<h1>Componente st-common<a class="headerlink" href="#componente-st-common" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Componente que centraliza ciertas funcionalidades comunes que son utilizadas por los diferentes microservicios.</p>
+<p>Para realizar el despliegue se deben seguir las siguientes indicaciones:</p>
+<div class="section" id="clonar-repositorio">
+<h2>Clonar repositorio<a class="headerlink" href="#clonar-repositorio" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Se debe clonar el repositorio <a class="reference external" href="https://github.com/SwissTierrasColombia/st-common"><strong>st-common</strong></a> almacenado en github y posteriormente generar el jar del proyecto a través de maven.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/SwissTierrasColombia/st-common
+$ <span class="nb">cd</span> st-common <span class="o">&amp;&amp;</span> git checkout master
+$ mvn clean package
+</pre></div>
+</div>
+</div>
+<div class="section" id="instalar-jar-en-el-repositorio-local-de-maven">
+<h2>Instalar JAR en el repositorio local de maven<a class="headerlink" href="#instalar-jar-en-el-repositorio-local-de-maven" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para instalar este componente en el repositorio local de maven con el objetivo que otros microservicios puedan incluirlo en sus dependecias se debe ejecutar el siguiente comando:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ mvn install:install-file <span class="se">\</span>
+   -Dfile<span class="o">=</span>/path/to/st-common/target/st-common-1.0.0.jar <span class="se">\</span>
+   -DgroupId<span class="o">=</span>com.ai.st.microservice.common <span class="se">\</span>
+   -DartifactId<span class="o">=</span>st-common <span class="se">\</span>
+   -Dversion<span class="o">=</span><span class="m">1</span>.0.0 <span class="se">\</span>
+   -Dpackaging<span class="o">=</span>jar <span class="se">\</span>
+   -DgeneratePom<span class="o">=</span><span class="nb">true</span> 
+</pre></div>
+</div>
+<p>Actualmente los microservicios que hacen uso de este componente son:</p>
 <ul class="simple">
-<li><p><strong>Super Administrador</strong>:</p>
-<ul>
-<li><p>Permite crear los administradores del sistema, este usuario actúa como un usuario de inicio en el sistema.</p></li>
+<li><p>st-microservice-administration</p></li>
 </ul>
-</li>
-<li><p><strong>Administrador</strong>: Ejecuta funciones como autoridad catastral tales como:</p>
-<ul>
-<li><p>Entregar insumos a los gestores</p></li>
-<li><p>Asignar gestores a los municipios</p></li>
-<li><p>Crea usuarios con rol Gestor, Proveedor y Operador</p></li>
-<li><p>Crea entidades gestoras, proveedores de insumo y operadores</p></li>
-</ul>
-</li>
-<li><p><strong>Gestor</strong>: Ejecuta funciones de gestor tales como:</p>
-<ul>
-<li><p>Asignación de operador al municipio en el cual esta asignado</p></li>
-<li><p>Realiza solicitudes de insumos a los proveedores</p></li>
-<li><p>Entrega insumos a los operadores</p></li>
-<li><p>Realiza procesos de integración catastro-registro</p></li>
-</ul>
-</li>
-<li><p><strong>Operador</strong>: Ejecuta funciones de operador tales como:</p>
-<ul>
-<li><p>Descarga de insumos para comenzar el barrido predial</p></li>
-<li><p>Generación de reportes a partir de una entrega hecha por el gestor</p></li>
-</ul>
-</li>
-<li><p><strong>Proveedor</strong>: Ejecuta funciones de proveedor de insumo tales como:</p>
-<ul>
-<li><p>Recepción de solicitudes y peticiones por parte de gestores</p></li>
-<li><p>Cargue y disposición de insumos a gestores</p></li>
-<li><p>Caracterización de insumos</p></li>
-</ul>
-</li>
-</ul>
-<p>Adicional a los roles algunos de ellos cuentan con subroles con funcionalidades especificas:</p>
-<ul class="simple">
-<li><p><strong>Gestor-Integrador</strong>: Lleva a cabo el proceso de integración a través del Asistente LADM-COL</p></li>
-<li><p><strong>Proveedor-Técnico</strong>: Lleva a cabo las tareas de cargar insumos al sistema.</p></li>
-</ul>
+</div>
 </div>
 
 
@@ -239,10 +227,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="databases.html" class="btn btn-neutral float-right" title="Base de datos" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="st-microservice-oauth.html" class="btn btn-neutral float-right" title="Microservicio st-microservice-oauth" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="version.html" class="btn btn-neutral float-left" title="Versionamiento" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="st-zuul-server.html" class="btn btn-neutral float-left" title="Microservicio st-zuul-server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

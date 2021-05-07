@@ -7,7 +7,6 @@ Documentación técnica
 
     technical-doc/index.md
     technical-doc/version.md
-    technical-doc/users.md
     technical-doc/databases.md
     technical-doc/st-configuration-properties.md
     technical-doc/general-settings.md
@@ -15,6 +14,7 @@ Documentación técnica
     technical-doc/st-config-server.md
     technical-doc/st-eureka-server.md
     technical-doc/st-zuul-server.md
+    technical-doc/st-common.md
     technical-doc/st-microservice-oauth.md
     technical-doc/st-microservice-administration.md
     technical-doc/st-microservice-managers.md

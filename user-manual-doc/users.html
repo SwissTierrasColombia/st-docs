@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Funcionalidades &mdash; documentación de Documentación Sistema de Transición - v2.23.38</title>
+  <title>Jerarquía de Usuarios &mdash; documentación de Documentación Sistema de Transición - v2.23.38</title>
   
 
   
@@ -41,8 +41,8 @@
   <link rel="stylesheet" href="../_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="Descripción de la interfaz" href="5-descripcion-interfaz.html" />
-    <link rel="prev" title="Administración de usuarios" href="3-gestion-usuarios.html" /> 
+    <link rel="next" title="Descripción del sistema de transición" href="1-descripcion-st.html" />
+    <link rel="prev" title="Introducción" href="0-introduccion.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -93,11 +93,11 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../user-manual-doc.html">Manual de usuario</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="0-introduccion.html">Introducción</a></li>
-<li class="toctree-l2"><a class="reference internal" href="users.html">Jerarquía de Usuarios</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Jerarquía de Usuarios</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1-descripcion-st.html">Descripción del sistema de transición</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2-entidades-actores.html">Entidades y/o actores del sistema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3-gestion-usuarios.html">Administración de usuarios</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Funcionalidades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4-funcionalidades.html">Funcionalidades</a></li>
 <li class="toctree-l2"><a class="reference internal" href="5-descripcion-interfaz.html">Descripción de la interfaz</a></li>
 <li class="toctree-l2"><a class="reference internal" href="6-rol-super-admin-sistema.html">Rol: Súper Administrador Del Sistema</a></li>
 <li class="toctree-l2"><a class="reference internal" href="7-rol-admin-sistema.html">Rol: Administrador Del Sistema</a></li>
@@ -154,13 +154,13 @@
         
           <li><a href="../user-manual-doc.html">Manual de usuario</a> &raquo;</li>
         
-      <li>Funcionalidades</li>
+      <li>Jerarquía de Usuarios</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/user-manual-doc/4-funcionalidades.md.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/user-manual-doc/users.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -173,110 +173,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="funcionalidades">
-<h1>Funcionalidades<a class="headerlink" href="#funcionalidades" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>El sistema tiene funcionalidades asociadas a cada uno de los roles y estas se despliegan en los menús del panel lateral de la interfaz una vez el usuario ingresa, se despliegan de acuerdo con el perfil y permisos que cada usuario tiene en el sistema. Con el fin de que el lector pueda ubicar la funcionalidad a utilizar del sistema a continuación se muestra la siguiente tabla de funcionalidades según el rol que se desee consultar.</p>
+  <div class="section" id="jerarquia-de-usuarios">
+<h1>Jerarquía de Usuarios<a class="headerlink" href="#jerarquia-de-usuarios" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>El sistema de transición se define a partir de roles y subroles  a conocer:</p>
+<p><img alt="roles" src="../_images/roles.png" /></p>
+<p>De la anterior imagen se evidencia los siguientes roles:</p>
 <ul class="simple">
-<li><p>DESCRIPCIÓN DE LA INTERFAZ</p>
+<li><p><strong>Super Administrador</strong>:</p>
 <ul>
-<li><p>Funcionalidades básicas (aplica para todos los roles)</p></li>
+<li><p>Permite crear los administradores del sistema, este usuario actúa como un usuario de inicio en el sistema.</p></li>
 </ul>
 </li>
-<li><p>ROL: SUPER ADMINISTRADOR DEL SISTEMA</p>
+<li><p><strong>Administrador</strong>: Ejecuta funciones como autoridad catastral tales como:</p>
 <ul>
-<li><p>Gestión de Usuarios</p>
-<ul>
-<li><p>Listar usuarios administradores</p></li>
-<li><p>Registrar usuarios administradores</p></li>
+<li><p>Entregar insumos a los gestores</p></li>
+<li><p>Asignar gestores a los municipios</p></li>
+<li><p>Crea usuarios con rol Gestor, Proveedor y Operador</p></li>
+<li><p>Crea entidades gestoras, proveedores de insumo y operadores</p></li>
 </ul>
 </li>
+<li><p><strong>Gestor</strong>: Ejecuta funciones de gestor tales como:</p>
+<ul>
+<li><p>Asignación de operador al municipio en el cual esta asignado</p></li>
+<li><p>Realiza solicitudes de insumos a los proveedores</p></li>
+<li><p>Entrega insumos a los operadores</p></li>
+<li><p>Realiza procesos de integración catastro-registro</p></li>
 </ul>
 </li>
-<li><p>ROL: ADMINISTRADOR DEL SISTEMA</p>
+<li><p><strong>Operador</strong>: Ejecuta funciones de operador tales como:</p>
 <ul>
-<li><p>Gestión de usarios</p>
-<ul>
-<li><p>Listar usuarios</p></li>
-<li><p>Registrar usuarios administradores de entidad</p>
-<ul>
-<li><p>Registrar usuario rol gestor</p></li>
-<li><p>Registrar usuario rol operador</p></li>
-<li><p>Registrar usuario rol proveedor de insumos</p></li>
+<li><p>Descarga de insumos para comenzar el barrido predial</p></li>
+<li><p>Generación de reportes a partir de una entrega hecha por el gestor</p></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><p>Creación de entidades</p>
+<li><p><strong>Proveedor</strong>: Ejecuta funciones de proveedor de insumo tales como:</p>
 <ul>
-<li><p>Registrar gestor</p></li>
-<li><p>Registrar operador</p></li>
-<li><p>Registrar proveedor de insumos</p></li>
-</ul>
-</li>
-<li><p>Gestión de municipio</p>
-<ul>
-<li><p>asignación de gestor</p></li>
-<li><p>Disposición de información para la Gestión Catastral</p></li>
+<li><p>Recepción de solicitudes y peticiones por parte de gestores</p></li>
+<li><p>Cargue y disposición de insumos a gestores</p></li>
+<li><p>Caracterización de insumos</p></li>
 </ul>
 </li>
 </ul>
-</li>
-<li><p>ROL: GESTOR</p>
-<ul>
-<li><p>Gestión de usarios</p></li>
-<li><p>Listar usuarios</p></li>
-<li><p>Registrar usuarios</p></li>
-</ul>
-</li>
-<li><p>GESTIÓN DE MUNICIPIO</p>
-<ul>
-<li><p>Busqueda y consulta de municipio asignado</p></li>
-<li><p>Asignación de Operador</p></li>
-<li><p>Descarga de información para la Gestión Catastral</p></li>
-</ul>
-</li>
-<li><p>GESTIÓN DE INSUMOS</p>
-<ul>
-<li><p>Solicitud de insumos</p></li>
-<li><p>Petición de insumos</p></li>
-<li><p>Búsqueda de solicitudes</p></li>
-<li><p>Integración de archivos XTF</p></li>
-<li><p>Búsqueda de insumos</p></li>
-<li><p>Entrega de insumos</p></li>
-</ul>
-</li>
-<li><p>ROL: OPERADOR</p>
-<ul>
-<li><p>Gestión de usarios</p>
-<ul>
-<li><p>Descargas pendientes</p></li>
-<li><p>Descargas reporte</p></li>
-<li><p>Descargas realizadas</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>ROL: PROVEEDOR DE INSUMOS</p>
-<ul>
-<li><p>Gestión de usarios (perfil Administrador)</p>
-<ul>
-<li><p>Listar usuarios</p></li>
-<li><p>Registrar usuarios</p></li>
-<li><p>Crear área de trabajo</p></li>
-<li><p>GESTIÓN DE INSUMOS</p>
-<ul>
-<li><p>Atención peticiones de creación de insumos (Perfil Administrador)</p></li>
-<li><p>Caracterización de insumos (Perfil Administrador)</p></li>
-<li><p>Solicitudes pendientes (Perfil Técnico)</p></li>
-<li><p>Cargue de insumo Catastral ETL Cobol (Perfil Técnico)</p></li>
-<li><p>Caso especial SNR (revisión y cargue de adjuntos PDF “cabida y linderos”)</p></li>
-<li><p>Solicitudes atendidas (Perfil Técnico)</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<p>Adicional a los roles algunos de ellos cuentan con subroles con funcionalidades especificas:</p>
+<ul class="simple">
+<li><p><strong>Gestor-Integrador</strong>: Lleva a cabo el proceso de integración a través del Asistente LADM-COL</p></li>
+<li><p><strong>Proveedor-Técnico</strong>: Lleva a cabo las tareas de cargar insumos al sistema.</p></li>
 </ul>
 </div>
 
@@ -288,10 +229,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="5-descripcion-interfaz.html" class="btn btn-neutral float-right" title="Descripción de la interfaz" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="1-descripcion-st.html" class="btn btn-neutral float-right" title="Descripción del sistema de transición" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="3-gestion-usuarios.html" class="btn btn-neutral float-left" title="Administración de usuarios" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="0-introduccion.html" class="btn btn-neutral float-left" title="Introducción" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
