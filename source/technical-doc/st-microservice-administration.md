@@ -56,6 +56,8 @@ $ cd st-microservice-administration && git checkout master
 $ mvn clean package -DskipTests
 ```
 
+Nota: Asegurarse que el componente st-common este instalado en el repositorio local de maven o que el microservicio pueda encontrar esta dependencia.
+
 ## Crear imagen docker
 
 Se debe crear la imagen docker a partir del archivo Dockerfile que se encuentra en el repositorio, esta imagen requiere que se le pasen los siguientes argumentos:
