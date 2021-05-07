@@ -15,4 +15,4 @@ El sistema de transición utiliza la política de versionado por número la cual
 
 Es importante aclarar que el sistema de transición se conforma de varios componentes los cuales hacen uso de la misma política de versionado.
 
-A partir de esto se establece que la versión que se encuentra desplegada a fecha del **26 de Octubre de 2020** en la infraestructura del IGAC es **v2.3.11**
+A partir de esto se establece que la versión que se encuentra desplegada a fecha del **20 de Abril de 2021** en la infraestructura del IGAC es **v3.16.5**
