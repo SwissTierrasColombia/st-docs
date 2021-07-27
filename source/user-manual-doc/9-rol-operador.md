@@ -10,7 +10,7 @@ En este módulo el Operador podrá realizar la descarga de los insumos que el Ge
 
 Se despliega al dar clic en el menú lateral izquierdo en la entrada “Insumos/Descargas pendientes“, la interfaz despliega una lista de las entregas realizadas por el Gestor, que pueden ser por cada municipio asignado o varias entregas para un mismo municipio. Esta lista tiene los siguientes campos: Identificador de la entrega, el nombre del Gestor que hace la entrega, nombre del municipio, código del municipio de los insumos entregados, fecha de entrega, campo de observaciones y el campo de opciones en donde al dar clic en el icono “Ver“ se da ingreso a la entrega como se ve en la imagen.
 
-<a href="https://swisstierrascolombia.github.io/st-docs/images/operador/1-descargas-pendientes.gif" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/images/operador/1-descargas-pendientes.gif"></a>
+<a href="images/operador/1-descargas-pendientes.gif" target="_blank"><img targe="_blank" src="images/operador/1-descargas-pendientes.gif"></a>
 
 A continuación, el Operador podrá realizar la descarga de los insumos entregados.
 
