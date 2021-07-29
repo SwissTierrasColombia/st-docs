@@ -2,9 +2,7 @@
 
 El sistema de transición se define a partir de roles y subroles  a conocer:
 
-![roles](images/roles.png)
-
-
+<a class="" data-lightbox="Jerarquía de Usuarios" href="../_static/roles.png" title="Jerarquía de Usuarios" data-title="Jerarquía de Usuarios"><img src="../_static/roles.png" class="align-center" width="800px" alt="Jerarquía de Usuarios"/></a>
 
 De la anterior imagen se evidencia los siguientes roles:
 
