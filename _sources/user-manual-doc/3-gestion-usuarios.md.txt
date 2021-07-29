@@ -1,3 +1,3 @@
 # Administración de usuarios
 
-<a href="https://swisstierrascolombia.github.io/st-docs/_images/roles.png" target="_blank"><img targe="_blank" src="https://swisstierrascolombia.github.io/st-docs/_images/roles.png"> <center><small>Diagrama “Administración de usuarios“ Sistema de Transición</small></center></a>
+<a class="" data-lightbox="Jerarquía de Usuarios Sistema de Transición" href="../_static/roles.png" title="Jerarquía de Usuarios Sistema de Transición" data-title="Jerarquía de Usuarios Sistema de Transición"><img src="../_static/roles.png" class="align-center" width="800px" alt="Jerarquía de Usuarios Sistema de Transición"/><center><small>Diagrama “Administración de usuarios“ Sistema de Transición</small></center></a>
