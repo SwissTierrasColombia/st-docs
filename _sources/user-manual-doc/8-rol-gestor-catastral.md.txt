@@ -161,7 +161,7 @@ Funcionalidad "Eliminar Producto" de entrega
 Iniciar "Revisión" y descarga de productos
 <a class="" data-lightbox="Iniciar revisión y descarga" href="../_static/gestorlevcat/2-1_iniciar-revisión-y-descargar-adjuntos.gif" title="Iniciar revisión y descarga" data-title="Iniciar revisión y descarga"><img src="../_static/gestor/levcat/2-1_iniciar-revisión-y-descargar-adjuntos.gif" class="align-center" width="800px" alt="Iniciar revisión y descarga"/></a>
 
-Aceptar "Produto" y realizar Feed-back
+Aceptar "Producto" y realizar Feed-Back
 
 <a class="" data-lightbox="Aceptar producto" href="../_static/gestorlevcat/2-2_aceptar-producto-y-realizar-feedback.gif" title="Aceptar producto" data-title="Aceptar producto"><img src="../_static/gestor/levcat/2-2_aceptar-producto-y-realizar-feedback.gif" class="align-center" width="800px" alt="Aceptar producto"/></a>
 
