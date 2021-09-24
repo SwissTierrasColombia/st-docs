@@ -139,34 +139,44 @@ El Gestor puede consultar los insumos entregados al dar clic en el menú lateral
 ## Recepción productos "Levantamiento Catastral"
 
 Ver Bandeja de entrada
+
 <a class="" data-lightbox="Ver bandeja de entrada" href="../_static/gestorlevcat/0_bandeja-entrada.gif" title="Ver bandeja de entrada" data-title="Ver bandeja de entrada"><img src="../_static/gestor/levcat/0_bandeja-entrada.gif" class="align-center" width="800px" alt="Ver bandeja de entrada"/></a>
 
 Funcionalidad "Crear Producto XTF" de entrega para el Operador
+
 <a class="" data-lightbox="Crear producto XTF" href="../_static/gestorlevcat/1-1_crear-producto-XTF.gif" title="Crear producto XTF" data-title="Crear producto XTF"><img src="../_static/gestor/levcat/1-1_crear-producto-XTF.gif" class="align-center" width="800px" alt="Crear producto XTF"/></a>
 
 Funcionalidad  "Crear Producto" de entrega para el Operador
+
 <a class="" data-lightbox="Crear producto" href="../_static/gestorlevcat/1-2_crear-producto-otro.gif" title="Crear producto" data-title="Crear producto"><img src="../_static/gestor/levcat/1-2_crear-producto-otro.gif" class="align-center" width="800px" alt="Crear producto"/></a>
 
 Funcionalidad  "Actualizar Producto" de entrega
+
 <a class="" data-lightbox="Actualizar producto" href="../_static/gestorlevcat/1-3_producto-actualizado.gif" title="Actualizar producto" data-title="Actualizar producto"><img src="../_static/gestor/levcat/1-3_producto-actualizado.gif" class="align-center" width="800px" alt="Actualizar producto"/></a>
 
 Funcionalidad "Eliminar Producto" de entrega
+
 <a class="" data-lightbox="Eliminar producto" href="../_static/gestorlevcat/1_4_eliminar-producto.gif" title="Eliminar producto" data-title="Eliminar producto"><img src="../_static/gestor/levcat/1_4_eliminar-producto.gif" class="align-center" width="800px" alt="Eliminar producto"/></a>
 
-Iniciar "Revisión" y desarga de productos
+Iniciar "Revisión" y descarga de productos
 <a class="" data-lightbox="Iniciar revisión y descarga" href="../_static/gestorlevcat/2-1_iniciar-revisión-y-descargar-adjuntos.gif" title="Iniciar revisión y descarga" data-title="Iniciar revisión y descarga"><img src="../_static/gestor/levcat/2-1_iniciar-revisión-y-descargar-adjuntos.gif" class="align-center" width="800px" alt="Iniciar revisión y descarga"/></a>
 
 Aceptar "Produto" y realizar Feed-back
+
 <a class="" data-lightbox="Aceptar producto" href="../_static/gestorlevcat/2-2_aceptar-producto-y-realizar-feedback.gif" title="Aceptar producto" data-title="Aceptar producto"><img src="../_static/gestor/levcat/2-2_aceptar-producto-y-realizar-feedback.gif" class="align-center" width="800px" alt="Aceptar producto"/></a>
 
 Rechazar "Producto" y enviar a revisión
+
 <a class="" data-lightbox="Rechazar producto para revisar" href="../_static/gestorlevcat/2-3_rechazar-producto-y-enviar-a-revisión.gif" title="Rechazar producto para revisar" data-title="Rechazar producto para revisar"><img src="../_static/gestor/levcat/2-3_rechazar-producto-y-enviar-a-revisión.gif" class="align-center" width="800px" alt="Rechazar producto para revisar"/></a>
 
 Rechazar "Producto" y aceptar entrega
+
 <a class="" data-lightbox="Rechazar producto y aceptar entrega" href="../_static/gestorlevcat/2-4_rechazar-producto-y-aceptar-entrega.gif" title="Rechazar producto y aceptar entrega" data-title="Rechazar producto y aceptar entrega"><img src="../_static/gestor/levcat/2-4_rechazar-producto-y-aceptar-entrega.gif" class="align-center" width="800px" alt="Rechazar producto y aceptar entrega"/></a>
 
 Aceptar entrega y vizualizar
+
 <a class="" data-lightbox="Aceptar entrega" href="../_static/gestorlevcat/2-5_aceptar-entrega-y-visualizar.gif" title="Aceptar entrega" data-title="Aceptar entrega"><img src="../_static/gestor/levcat/2-5_aceptar-entrega-y-visualizar.gif" class="align-center" width="800px" alt="Aceptar entrega"/></a>
 
 Ver entregas finalizadas y uso de filtros
+
 <a class="" data-lightbox="Uso de filtros" href="../_static/gestorlevcat/3-0_filtros-y-entregas-finalizadas.gif" title="Uso de filtros" data-title="Uso de filtros"><img src="../_static/gestor/levcat/3-0_filtros-y-entregas-finalizadas.gif" class="align-center" width="800px" alt="Uso de filtros"/></a>
